@@ -1,15 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-    </script>
-<script>
-    $(function () {
-        $("#header").load("./Global/header.html");
-        $("#nav").load("./Global/nav.html");
-        $("#footer").load("./Global/footer.html");
-    });
-</script>
 
 <head>
     <meta charset="UTF-8">
@@ -19,75 +9,161 @@
 </head>
 
 <body>
-    <header id="header"></header>
-    <nav id="nav"></nav>
-    <!--Remaining section-->
+    <header>
+        <nav>
+            <img src="./img/logo.png" alt="Logo of Diffusion Basics">
+            <a href="../index.html">Home</a>
+            <a href="./installatie.html">Installatie</a>
+            <a href="./prompting.html">Prompting</a>
+            <a href="./textToImage.html">Text-to-Image</a>
+            <a href="./imageToImage.html">Image-to-Image</a>
+            <a href="./upscaling.html">Upscaling</a>
+            <a href="./modellen.html">Modellen</a>
+            <a href="./training.html">Training</a>
+            <a href="./extensies.html">Extensies</a>
+            <a href="./instellingen.html">Instellingen</a>
+        </nav>
+    </header>
 
-    <h1>Wat is Stable Diffusion?</h1>
-    <p>Stable Diffusion (SD) is een geavanceerde AI-beeldgenerator dat lokaal gerund kan worden op persoonlijke
-        computers (meer hierover in SD Setup).</p>
+    <article>
+        <section>
+            <h1>Wat is Stable Diffusion?</h1>
+            <p>Stable Diffusion (SD) is een geavanceerde AI-beeldgenerator dat lokaal gerund kan worden op persoonlijke
+                computers (meer hierover in Installatie).</p>
+            <p>Het gene wat SD uniek maakt in vergelijking met zijn competitie, is dat SD opensource is met een
+                bloeiende
+                gemeenschap van individuelen die<br>
+                implementaties creëren die zijn afgeleid van deze open source-mentaliteit.</p>
+        </section>
 
-    <img src="./img/Home/HomeExampleCorgi1.jpg">
-    <img src="./img/Home/HomeExampleCorgi2.jpg">
-    <img src="./img/Home/HomeExampleCorgi3.jpg">
-    Corgi Sunglasses Corgi wearing Sunglasses
+        <section class="centeredImageRow">
+            <figure id="homeImage1">
+                <img src="./img/Home/HomeExampleCorgi1.png" alt="Digital image of AI Generated Corgi">
+                <figcaption class="imageDescription">
+                    Corgi
+                </figcaption>
+            </figure>
+            <figure id="homeImage2">
+                <img src="./img/Home/HomeExampleCorgi2.png" alt="Digital image of AI Generated Sunglasses">
+                <figcaption class="imageDescription">
+                    Sunglasses
+                </figcaption>
+            </figure>
+            <figure id="homeImage3">
+                <img src="./img/Home/HomeExampleCorgi3.png"
+                    alt="Digital image of AI Generated Corgi wearing Sunglasses">
+                <figcaption class="imageDescription">
+                    Corgi wearing Sunglasses
+                </figcaption>
+            </figure>
+        </section>
 
-    <p>Het gene wat SD uniek maakt in vergelijking met zijn competitie, is dat SD opensource is met een bloeiende
-        gemeenschap van individuelen die<br>
-        implementaties creëren die zijn afgeleid van deze open source-mentaliteit.</p>
+        <section>
+            <ul>
+                <li>
+                    <strong>Fijn afgestemde modellen:</strong> De community werkt aan het maken van modellen door
+                    bemiddel van<br>het te
+                    trainen op datasets van specifieke<br>onderwerpen/stijlen. Hiermee krijgen ze uiteindelijk
+                    accuratere
+                    resultaten.<br>
+                    Deze modellen kunnen gaan over bijvoorbeeld:
+                </li>
+                <ul>
+                    <li>Stijlen</li>
+                    <li>Karakters</li>
+                    <li>Objecten</li>
+                    <li>Concepten</li>
+                </ul><br>
+                <li><strong>Extensies:</strong> Buiten de functionaliteit dat SD standaard bied zoals: Tekst-to-Image,
+                    Image-to-Image,
+                    Upscaling
+                    ect.<br>Zijn er ook gemeenschap gedreven extensies en tool die de gebruiker verder kunnen helpen in
+                    het
+                    creëren<br> en
+                    manipuleren van AI-gegenereerde afbeeldingen, zoals:</li>
+                <ul>
+                    <li>Dreambooth: Makkelijk trainen van modellen</li>
+                    <li>ControlNet: Herkennen en toepassen van afbeelding-dieptemappen,<br>
+                        contouren & poses voor het lezen en creëren van afbeeldingen.</li>
+                </ul><br>
+                <li><strong>Updates:</strong> De webUI en extensies die gebruikt worden, zijn zowat allemaal publieke
+                    GitHub
+                    repositories.
+                    Hierdoor kan
+                    alles simpel geüpdate worden met een simpele pull-request (dat geautomatiseerd kan worden, meer
+                    hierover
+                    in
+                    Installatie)</li><br>
+            </ul>
+        </section>
+    </article>
 
-    <ul>
-        <li>
-            Fijn afgestemde modellen: De community werkt aan het maken van modellen door bemiddel van<br>het te trainen
-            op
-            datasets van specifieke<br>onderwerpen/stijlen. Hiermee krijgen ze uiteindelijk accuratere resultaten.<br>
-            Deze modellen kunnen gaan over bijvoorbeeld:
-        </li>
-        <ul>
-            <li>Stijlen</li>
-            <li>Karakters</li>
-            <li>Objecten</li>
-            <li>Concepten</li>
-        </ul><br>
-        <li>Extensies: Buiten de functionaliteit dat SD standaard bied zoals: Tekst-to-Image, Image-to-Image, Upscaling
-            ect.<br>Zijn er ook gemeenschap gedreven extensies en tool die de gebruiker verder kunnen helpen in het
-            creëren<br> en
-            manipuleren van AI-gegenereerde afbeeldingen, zoals:</li>
-        <ul>
-            <li>Dreambooth: Makkelijk trainen van modellen</li>
-            <li>ControlNet: Herkennen en toepassen van afbeelding-dieptemappen,<br>
-                contouren & poses voor het lezen en creëren van afbeeldingen.</li>
-        </ul><br>
-        <li>Updates: De webUI en extensies die gebruikt worden, zijn zowat allemaal publieke GitHub repositories.
-            Hierdoor kan
-            alles simpel geüpdate worden met een simpele pull-request (dat geautomatiseerd kan worden, meer hierover in
-            SD Setup)</li><br>
-    </ul>
+    <article id="homeAfterExamples">
+        <section>
+            <h2>Benieuwd om te beginnen?</h2>
+            <p>Deze website bied extensieve uitleg voor beginners en gevorderde over het<br>
+                gebruik en het installeren (Installatie) van Stable Diffusion.<br>
+                Hier worden concepten bedekt zoals:</p>
+            <ul>
+                <li><a href="./installatie.html">Installatie</a></li>
+                <li><a href="./prompting.html">Prompting</a></li>
+                <li><a href="./textToImage.html">Text-to-Image</a></li>
+                <li><a href="./imageToImage.html">Image-to-Image</a></li>
+                <li><a href="./upscaling.html">Upscaling</a></li>
+                <li><a href="./modellen.html">Modellen</a></li>
+                <li><a href="./training.html">Training</a></li>
+                <li><a href="./extensies.html">Extensies</a></li>
+                <li><a href="./instellingen.html">Instellingen</a></li>
+            </ul>
+        </section>
 
-    <h2>Benieuwd om te beginnen?</h2>
-    <p>Deze website bied extensieve uitleg voor beginners en gevorderde over het<br>
-        gebruik en het installeren (SD Setup) van Stable Diffusion.<br>
-        Hier worden concepten bedekt zoals:</p>
-    <ul>
-        <li>Wat is SD?</li>
-        <li>Installatie</li>
-        <li>Prompting</li>
-        <li>Generatie Instellingen</li>
-        <li>Text-to-Image</li>
-        <li>Image-to-Image</li>
-        <li>Upscaling</li>
-        <li>Modellen</li>
-        <li>Extensies & Plugins</li>
-        <li>Systeem Instellingen</li>
-        <li>En meer!</li>
+        <section class="centeredImageRow">
+            <figure id="homeImage2">
+                <img src="./img/Home/HomeExampleExtra1.png" alt="Digital image of AI Generated Sunglasses">
+                <figcaption class="imageDescription">
+                    Lion wearing crown
+                </figcaption>
+            </figure>
+            <figure id="homeImage2">
+                <img src="./img/Home/HomeExampleExtra2.png" alt="Digital image of AI Generated Sunglasses">
+                <figcaption class="imageDescription">
+                    Astronaut riding horse on the moon
+                </figcaption>
+            </figure>
+            <figure id="homeImage3">
+                <img src="./img/Home/HomeExampleExtra3.png"
+                    alt="Digital image of AI Generated Corgi wearing Sunglasses">
+                <figcaption class="imageDescription">
+                    Hare mage
+                </figcaption>
+            </figure>
+        </section>
+        <section class="centeredImageRow">
+            <figure id="homeImage1">
+                <img src="./img/Home/HomeExampleExtra4.png" alt="Digital image of AI Generated Corgi">
+                <figcaption class="imageDescription">
+                    Car 80’s Miami style
+                </figcaption>
+            </figure>
+            <figure id="homeImage2">
+                <img src="./img/Home/HomeExampleExtra5.png" alt="Digital image of AI Generated Sunglasses">
+                <figcaption class="imageDescription">
+                    Modern Building
+                </figcaption>
+            </figure>
+            <figure id="homeImage3">
+                <img src="./img/Home/HomeExampleExtra6.png"
+                    alt="Digital image of AI Generated Corgi wearing Sunglasses">
+                <figcaption class="imageDescription">
+                    Old bearded man tinkering with watches in dimly lit workshop
+                </figcaption>
+            </figure>
+        </section>
+    </article>
 
-        <img src="./img/Home/HomeExample4.jpg">
-        <img src="./img/Home/HomeExampleCorgi5.jpg">
-        <img src="./img/Home/HomeExampleCorgi6.jpg">
-        <img src="./img/Home/HomeExampleCorgi7.jpg">
-        <img src="./img/Home/HomeExampleCorgi8.jpg">
-        <img src="./img/Home/HomeExampleCorgi9.jpg">
-        <footer id="footer"></footer>
+    <footer id="bottomFooter">
+        <p>&copy; 2023</p>
+    </footer>
 </body>
 
 </html>
