@@ -2,74 +2,118 @@
     margin: 0em;
     border: 0em;
 }
-
-header{
+header {
     background-color: rgba(0, 0, 0, 1);
     border-bottom: 1px solid #FFF;
-    margin-bottom: 1em;
-    /* position: fixed; */
-}
+    position: static;
+    
+    top: 0;
+    z-index: 90;
+    width: 100vw; /* Set width to 100vw to span the entire viewport width */
+    position: fixed;
 
+}
 nav a {
     padding: 0.5em;
 }
-
 body {
     font-family: 'Coda', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    color: #ffffff;
 
-    max-width: 1850px;
+    color: #fff;
+    background: #050505;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1) .1em, transparent .1em), linear-gradient(90deg, rgba(255, 255, 255, 0.1) .1em, transparent .1em);
+    background-size: 60px 60px;
+}
+main {
+    max-width: 1350px;
+    background-color: #000;
+    border: 1px solid #827869;
+
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-bottom: 1em;
-    height: 100vh;
-
-    background: #130113;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.075) .1em, transparent .1em), linear-gradient(90deg, rgba(255, 255, 255, 0.075) .1em, transparent .1em);
-    background-size: 5em 5em;
+    margin-top: 50px;
 }
-
 figure {
+    position: relative;
     display: inline-block;
-    border: 1px solid #FFF;
-    margin: 20px;
+    width: auto;
+    margin: 0px;
 }
-
 figure img {
+    /* border-radius: 20px; */
+    border: 1px solid #827869;
+    width: 100%;
     vertical-align: top;
 }
-
 figure figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: 1px;
+    right: 1px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px;
     text-align: center;
-    font-style: italic;
-    color: #000;
-    background-color: #fff;
+    z-index: 1;
 }
-
 a {
     color: #ffaa00
 }
-
-h1, h2, strong{
+/* h1,
+h2,
+strong {
     color: #af4aae;
+} */
+
+h1{
+    font-size: 50px;
+    margin: 0px;
+    border:0px;
+}
+h2{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    border:0px;
 }
 
-.imageDescription {
-    justify-content: center;
-    align-items: center;
+
+.flexContainer {
+    display: flex;
 }
 
-.centeredImageRow {
-    margin: auto;
-    width: fit-content;
+.textBox{
+    /* border-radius: 20px; */
+    padding: 10px;
+    flex: 1;
+    margin-right: 0px;
+    border: 1px solid #827869;
+}
+
+.invert{
+    background-color: #FFF;
+    color: #000;
+}
+
+.whiteSeperator{
+    height: 20px;
+    background-color: #FFF;
+}
+
+.image25{
+    /* width: 25%; */
 }
 
 
-
-
-
+#logo{
+    max-height: 44px;
+    margin: 3px;
+}
+#topMain {
+    margin-top: 100px;
+}
 #bottomFooter {
     position: static;
     top: 50px;
@@ -77,7 +121,9 @@ h1, h2, strong{
     color: #ffff00;
     box-shadow: 0 50vh 0 50vh #111114;
 }
-
-#homeAfterExamples {
+#homeHareMage{
+    width: 50%;
+}
+#homeBenieuwdImageBreak{
     clear: both;
 }
