@@ -13,11 +13,14 @@ header {
     position: fixed;
 
 }
+nav{
+}
 nav a {
     padding: 0.5em;
 }
+
 body {
-    font-family: 'Coda', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: monospace;
     font-size: 16px;
 
     color: #fff;
@@ -88,7 +91,6 @@ h2{
     /* border-radius: 20px; */
     padding: 10px;
     flex: 1;
-    margin-right: 0px;
     border: 1px solid #827869;
 }
 
@@ -108,7 +110,7 @@ h2{
 
 
 #logo{
-    max-height: 44px;
+    max-height: 69px;
     margin: 3px;
 }
 #topMain {
