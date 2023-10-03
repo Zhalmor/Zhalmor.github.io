@@ -12,43 +12,156 @@
 <body>
     <header>
         <nav>
-            <img id="logo" src="./img/Logo/logo_Color_White.svg" alt="Logo of Diffusion Basics">
-            <a href="../index.html">Home</a>
-            <a href="./installatie.html">Installatie</a>
-            <a href="./prompting.html">Prompting</a>
-            <a href="./textToImage.html">Text-to-Image</a>
-            <a href="./imageToImage.html">Image-to-Image</a>
-            <a href="./upscaling.html">Upscaling</a>
-            <a href="./modellen.html">Modellen</a>
-            <a href="./training.html">Training</a>
-            <a href="./extensies.html">Extensies</a>
-            <a href="./instellingen.html">Instellingen</a>
+                <img id="logo" src="./img/Logo/logo_Color_White.svg" alt="Logo of Diffusion Basics">
+                <a href="../index.html">Home</a>
+                <a href="./installatie.html">Installatie</a>
+                <a href="./prompting.html">Prompting</a>
+                <a href="./textToImage.html">Text-to-Image</a>
+                <a href="./imageToImage.html">Image-to-Image</a>
+                <a href="./upscaling.html">Upscaling</a>
+                <a href="./modellen.html">Modellen</a>
+                <a href="./training.html">Training</a>
+                <a href="./extensies.html">Extensies</a>
+                <a href="./instellingen.html">Instellingen</a>
         </nav>
     </header>
 
     <main>
         <article id="topArticle">
             <section class="invert">
-                <h1>Hardware & Software</h1>
+                <h1>Image-to-Image</h1>
             </section>
             <section>
                 <section class="textBox">
-                    <h3>Hardware:</h3>
-                    <ul>
-                        <li>Moderne GPU met 8Gb VRAM (Nvidia werkt het best)</li>
-                        <li>6-8GB RAM</li>
-                        <li>10GB+ opslag (Ligt aan aantal modellen)</li>
-                    </ul>
-                    <h3>Software:</h3>
-                    <ul>
-                        <li>Nieuwste versie van Python (Codeertaal nodig voor SD te runnen)</li>
-                        <li><a target=”_blank” href="https://git-scm.com/">GIT</a> (Downloaden en bijhouden van updates)
-                        </li>
-                    </ul>
+                    <p>
+                    <h3>Wat is Image-to-Image?</h3>
+                    Image-to-image is het toepassen van je prompt op een al bestaande afbeelding, hierin kan je de
+                    sterkte van de aanpassing verander tussen 0 (er verandert niks) en 1 (het is een compleet nieuwe
+                    afbeelding). Hieronder zijn meerdere toepassingen van image-to-image
+
+                    <p class="TO_BE_ADDED">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore soluta
+                        blanditiis cum provident sed, nemo sit facilis eligendi eum doloremque reprehenderit maxime
+                        nostrum asperiores molestiae similique obcaecati ducimus iure odit?</p>
+                    </p>
+                </section>
+            </section>
+        </article>
+
+        <article>
+            <section class="invert">
+                <h2>Pose Herkenning</h2>
+            </section>
+            <section>
+                <h3>Standaard img2img</h3>
+                <p>Met het gebruik van bijvoorbeeld een houten anatomie pop kan je best simpel poses aangeven voor
+                    het
+                    model om na te bootsen. In dit voorbeeld word img2img gebruikt zonder ControlNet of
+                    dieptemappen.</p>
+                <h3><br>ControlNet dieptemappen</h3>
+                <p class="TO_BE_ADDED">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus itaque nesciunt
+                    eius! Nisi fugit ex ullam voluptatibus iure explicabo expedita fugiat ipsum itaque, rem omnis.
+                    Adipisci ducimus saepe dolorem in!</p>
+            </section>
+            <section>
+                <section class="flexContainer">
+                    <figure>
+                        <img src="./img/img2img/img2img_pose_photo1.jpg" alt="Photo of miniature wooden mannequin">
+                        <figcaption>
+                            Orginele Foto
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./img/img2img/img2img_pose_photo2.jpg" alt="Digital image of AI Generated wizard holding a staff">
+                        <figcaption>
+                            AI Generatie 1
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./img/img2img/img2img_pose_photo3.jpg"
+                            alt="Digital image of AI Generated wizard holding a staff">
+                        <figcaption>
+                            AI Generatie 2
+                        </figcaption>
+                    </figure>
+                </section>
+            </section>
+        </article>
+
+        <article>
+            <section class="invert">
+                <h2>Inpainting voor extra detail</h2>
+            </section>
+            <section>
+                <h3>Inpaint</h3>
+                <p>Inpainting is het aangeven van specifieke plekken binnen een afbeelding die verandert moeten worden.
+                    Positive Prompt: huge tophat on statue head
+                    Model: DreamShaper 8
+                    Denoising Strength 1: 0.7
+                </p>
+                <h3><br>INSERT INPAINT ALTERNATIEF</h3>
+                <p class="TO_BE_ADDED">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur velit
+                    voluptate ex, natus illo eius fugiat numquam. Nulla sequi odio enim harum neque exercitationem
+                    aspernatur quibusdam, facilis delectus, aliquam distinctio.</p>
+            </section>
+            <section>
+                <section class="flexContainer">
+                    <figure>
+                        <img src="./img/img2img/img2img_inpaint_1.png" alt="Digital image of AI Generated futurstic masked person">
+                        <figcaption>
+                            Orginele Afbeelding
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./img/img2img/img2img_inpaint_2.png" alt="Digital image of AI Generated futurstic masked person">
+                        <figcaption>
+                            Inpaint Versie
+                        </figcaption>
+                    </figure>
+                </section>
+            </section>
+        </article>
+
+        <article>
+            <section class="invert">
+                <h2>Selectie proces</h2>
+            </section>
+            <section>
+                <h3>Standaard</h3>
+                <p>Door eerst gebruik te maken van txt2img kan je vervolgens de beste afbeelding kiezen om mee verder te
+                    gaan met adopties dat je wilt zien.</p>
+                <h3><br>INSERT SELECTIE ALTERNATIEF</h3>
+                <p class="TO_BE_ADDED">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quia necessitatibus
+                    non aliquam, commodi recusandae quae aspernatur adipisci iusto. Fuga maxime, obcaecati facilis
+                    delectus excepturi accusamus culpa fugit labore ipsam.</p>
+
+                <h3><br>Text2Img</h3>
+                <p>Positive Prompts: warframe tenno, solo, by Frederick Hammersley</p>
+                <p>Negative Prompts: group, duo, trio, human, skin</p>
+                Model: DreamShaper 8
+
+                <h3><br>Img2img</h3>
+                <p>Positive Prompts: red accents, gold accents, black</p>
+                <p>Model: DreamShaper 8<br>
+                Denoising Strength: 0.7</p>
+
+            </section>
+            <section>
+                <section class="flexContainer">
+                    <figure>
+                        <img src="./img/img2img/img2img_selectie_1.png" alt="Digital image of AI Generated Corgi">
+                        <figcaption>
+                            Txt2Img
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./img/img2img/img2img_selectie_2.png" alt="Digital image of AI Generated Sunglasses">
+                        <figcaption>
+                            Img2Img
+                        </figcaption>
+                    </figure>
                 </section>
             </section>
         </article>
     </main>
 </body>
-
 </html>

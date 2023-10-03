@@ -29,22 +29,85 @@
     <main>
         <article id="topArticle">
             <section class="invert">
-                <h1>Hardware & Software</h1>
+                <h1>Algemeen</h1>
             </section>
             <section>
                 <section class="textBox">
-                    <h3>Hardware:</h3>
+                    <h3>Wat is een model?</h3>
+                    <p>Modellen en LoRA’s zijn hier te downloaden:</p>
                     <ul>
-                        <li>Moderne GPU met 8Gb VRAM (Nvidia werkt het best)</li>
-                        <li>6-8GB RAM</li>
-                        <li>10GB+ opslag (Ligt aan aantal modellen)</li>
+                        <li><a href="https://huggingface.co/models?pipeline_tag=text-to-image&sort=trending">Hugging
+                                Face</a></li>
+                        <li><a href="https://civitai.com/">CivitAi</a></li>
                     </ul>
-                    <h3>Software:</h3>
-                    <ul>
-                        <li>Nieuwste versie van Python (Codeertaal nodig voor SD te runnen)</li>
-                        <li><a target=”_blank” href="https://git-scm.com/">GIT</a> (Downloaden en bijhouden van updates)
-                        </li>
-                    </ul>
+                    <p class="TO_BE_ADDED"><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quis
+                        eligendi commodi maiores consequuntur adipisci explicabo, rerum debitis sit voluptates velit
+                        exercitationem magni libero porro itaque praesentium! Culpa, amet quasi.</p>
+                </section>
+            </section>
+        </article>
+
+        <article>
+            <section class="invert">
+                <h1>Model</h1>
+            </section>
+            <section>
+                <section class="textBox">
+                    <h3>Wat is een model?</h3>
+                    <p>Modellen (ook wel checkpoints genoemd) zijn grootschalig getrainde gewichten getrained op
+                        specifieke datasets, waardoor ze afbeeldingen in bepaalde stijlen kunnen genereren.
+                        Modellen kunnen zo klein zijn als 2GB zoals DreamShaper,
+                        of zo groot als 6.5GB SDXL, dit verschilt wegens de specificiteit en kwantiteit van de data.
+                        Afbeeldingen worden meestal in de formaten 512x512 & 764x764 gegenereerd, maar dit verschilt per
+                        model.</p>
+                </section>
+            </section>
+        </article>
+
+        <article>
+            <section class="invert">
+                <h1>LoRA</h1>
+            </section>
+            <section>
+                <section class="textBox">
+                    <h3>Wat is een LoRA?</h3>
+                    <p>
+                        Een LoRA (Low-Rank Adaptation) is een op base model getrainde adaptatie. Dat tijdens het
+                        prompt-naar-afbeelding proces veranderingen toebrengt voor een ander gewenst resultaat.
+                        <br>LoRA’s bevatten alleen de specifiek getrainde data, hierdoor zijn ze klein in grote.<br>
+                        Ze kunnen als extra specificatie toegepast worden, ook kunnen er meerdere tegelijkertijd
+                        gebruikt worden.
+                    </p>
+                    <p><br>Positive Prompts: Closeup of Giancarlo Esposito in tuxedo, realistic, analog style,
+                        modelshoot,
+                        hyperdetailed, reaslistic eyes, brown eyes, matte skin, soft shadows, dim lighting, realistic
+                        lighting</p>
+                    <p>Negative Prompts: bad eyes, blue eyes, green eyes</p>
+                    <p>Model: realisticVisionV20_v20</p>
+
+                </section>
+            </section>
+            <section>
+                <section class="flexContainer">
+                    <figure>
+                        <img src="./img/Modellen/modellen_giancarlo1.png" alt="Photo of Giancarlo Esposito">
+                        <figcaption>
+                            Orginele Foto
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./img/Modellen/modellen_giancarlo2.png" alt="Digital image of inaccurately AI Generated Giancarlo Esposito">
+                        <figcaption>
+                            Zonder LoRA
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./img/Modellen/modellen_giancarlo3.png"
+                            alt="Digital image of accurately AI Generated Giancarlo Esposito">
+                        <figcaption>
+                            Met LoRA
+                        </figcaption>
+                    </figure>
                 </section>
             </section>
         </article>

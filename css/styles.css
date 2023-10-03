@@ -35,7 +35,7 @@ body {
     background-size: 60px 60px;
 }
 main {
-    max-width: 1350px;
+    max-width: 1200px;
 
     justify-content: center;
     align-items: center;
@@ -78,12 +78,18 @@ h1{
     font-size: 50px;
     margin: 0px;
     border:0px;
+    
 }
 h2{
     text-align: center;
     font-size: 25px;
     margin-bottom: 10px;
     border:0px;
+    
+}
+
+h3{
+    
 }
 
 
@@ -103,13 +109,18 @@ h2{
     color: #000;
 }
 
+.invert h1, .invert h2, .invert h3{
+    color: #000000;
+    text-align: left;
+}
+
 .whiteSeperator{
     height: 20px;
     background-color: #FFF;
 }
 
-.image25{
-    /* width: 25%; */
+.TO_BE_ADDED{
+    color: #FF0000;
 }
 
 
