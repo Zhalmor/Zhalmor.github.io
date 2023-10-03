@@ -13,6 +13,12 @@ header {
     position: fixed;
 
 }
+
+article{
+    margin-top: 50px;
+    background-color: #000;
+    border: 1px solid #827869;
+}
 nav{
 }
 nav a {
@@ -30,8 +36,6 @@ body {
 }
 main {
     max-width: 1350px;
-    background-color: #000;
-    border: 1px solid #827869;
 
     justify-content: center;
     align-items: center;
@@ -42,7 +46,7 @@ figure {
     position: relative;
     display: inline-block;
     width: auto;
-    margin: 0px;
+    flex: 1;
 }
 figure img {
     /* border-radius: 20px; */
@@ -62,12 +66,12 @@ figure figcaption {
     z-index: 1;
 }
 a {
-    color: #ffaa00
+    color: #f27121
 }
 /* h1,
 h2,
 strong {
-    color: #af4aae;
+    color: #ac00ff;
 } */
 
 h1{
@@ -113,7 +117,7 @@ h2{
     max-height: 69px;
     margin: 3px;
 }
-#topMain {
+#topArticle {
     margin-top: 100px;
 }
 #bottomFooter {
@@ -122,10 +126,4 @@ h2{
     background-color: #111114;
     color: #ffff00;
     box-shadow: 0 50vh 0 50vh #111114;
-}
-#homeHareMage{
-    width: 50%;
-}
-#homeBenieuwdImageBreak{
-    clear: both;
 }
