@@ -50,7 +50,7 @@ figure {
 }
 figure img {
     /* border-radius: 20px; */
-    border: 1px solid #827869;
+    border: 1px solid #cebaff;
     width: 100%;
     vertical-align: top;
 }
@@ -66,7 +66,7 @@ figure figcaption {
     z-index: 1;
 }
 a {
-    color: #f27121
+    color: #b293ff
 }
 /* h1,
 h2,
@@ -101,7 +101,7 @@ h3{
     /* border-radius: 20px; */
     padding: 10px;
     flex: 1;
-    border: 1px solid #827869;
+    border: 1px solid #cebaff;
 }
 
 .invert{
