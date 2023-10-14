@@ -23,16 +23,19 @@
     }
 }
 
+/*---------------------------------------------*/
+/* Main Elements */
 header {
     background-color: #101114;
     top: 0;
     z-index: 90;
-    width: 100vw;
+    width: 100%;
     position: fixed;
-    padding: 0.5em;
+    
 }
 
 body {
+    margin-top: 4.5em;
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
 
@@ -42,11 +45,28 @@ body {
 
 main {
     max-width: 1200px;
-
+    
     justify-content: center;
     align-items: center;
     margin: auto;
+
+    /* display: flex;
+    flex-direction: column; */
 }
+
+#bottomFooter {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    position: static;
+    background-color: #101114;
+    width: 100%;
+    gap: 1em;
+    padding: 1em 0em;
+}
+
+/*---------------------------------------------*/
 
 figure {
     position: relative;
@@ -72,6 +92,8 @@ figure figcaption {
     z-index: 1;
 }
 
+/*---------------------------------------------*/
+
 a {
     color: #b293ff
 }
@@ -86,6 +108,7 @@ h2 {
     padding-bottom: 0.5em;
 }
 
+/*---------------------------------------------*/
 
 .flexContainer {
     display: flex;
@@ -100,6 +123,8 @@ h2 {
     height: 3em;
 }
 
+/*---------------------------------------------*/
+
 #homeBannerImage {
     position: relative;
     overflow: hidden;
@@ -111,20 +136,4 @@ h2 {
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, #16181c00 80%, #16181c);
-}
-
-#homeBannerImage img {
-    flex: 1;
-}
-
-#bottomFooter {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-
-    position: static;
-    background-color: #101114;
-    width: 100vw;
-    padding: 1em;
 }
