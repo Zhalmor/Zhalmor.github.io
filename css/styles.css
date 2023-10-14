@@ -8,6 +8,15 @@
 
     body {}
 
+    .grid-container {
+        background-color: #00ff00;
+        grid-template-areas:
+            'gridSection1'
+            'gridSection2'
+            'gridSection3'
+            'gridSection4';
+    }
+
     .pc-only {
         display: none;
     }
@@ -17,6 +26,13 @@
 
     /* PC View */
     body {}
+
+    .grid-container {
+        background-color: #ff0000;
+        grid-template-areas:
+            'gridSection1 gridSection2'
+            'gridSection3 gridSection4';
+    }
 
     .mobile-only {
         display: none;
@@ -31,7 +47,7 @@ header {
     z-index: 90;
     width: 100%;
     position: fixed;
-    
+
 }
 
 body {
@@ -45,7 +61,7 @@ body {
 
 main {
     max-width: 1200px;
-    
+
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -58,6 +74,7 @@ main {
     align-items: center;
     display: flex;
     flex-direction: column;
+    text-align: center;
 
     position: static;
     background-color: #101114;
@@ -111,12 +128,16 @@ h2 {
 
 /*---------------------------------------------*/
 
-.flexContainer {
+.flex-container {
     display: flex;
 }
 
-.textBox {
-    padding: 1em;
+.grid-container {
+    display: grid;
+    gap: 4em;
+}
+
+.flex-textBox {
     flex: 1;
 }
 
