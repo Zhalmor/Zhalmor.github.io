@@ -1,0 +1,5 @@
+Student name: Stef Visser
+Student number: 720764
+Student class: HAINFVT1A
+GitHub Repository: https://github.com/Zhalmor/Zhalmor.github.io
+GitHub Pages URL: https://zhalmor.github.io/
