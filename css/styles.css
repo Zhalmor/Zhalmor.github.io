@@ -3,12 +3,33 @@
     border: 0em;
 }
 
+@media (max-width: 768px) {
+    /* Mobile View */
+
+    body {}
+
+    .pc-only {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+
+    /* PC View */
+    body {}
+
+    .mobile-only {
+        display: none;
+    }
+}
+
 header {
     background-color: #101114;
     top: 0;
     z-index: 90;
     width: 100vw;
     position: fixed;
+    padding: 0.5em;
 }
 
 body {
@@ -18,6 +39,7 @@ body {
     color: #fff;
     background: #16181C;
 }
+
 main {
     max-width: 1200px;
 
@@ -25,17 +47,19 @@ main {
     align-items: center;
     margin: auto;
 }
+
 figure {
     position: relative;
     display: inline-block;
     width: auto;
     flex: 1;
-    
 }
+
 figure img {
     width: 100%;
     vertical-align: top;
 }
+
 figure figcaption {
     position: absolute;
     bottom: 10px;
@@ -47,26 +71,19 @@ figure figcaption {
     text-align: center;
     z-index: 1;
 }
+
 a {
     color: #b293ff
 }
-/* h1,
-h2,
-strong {
-    color: #ac00ff;
-} */
 
-h1{
+h1 {
     font-size: 2em;
 }
-h2{
+
+h2 {
     text-align: center;
     font-size: 1.5em;
-    padding-bottom: 1em;
-}
-
-h3{
-    
+    padding-bottom: 0.5em;
 }
 
 
@@ -74,48 +91,40 @@ h3{
     display: flex;
 }
 
-.textBox{
+.textBox {
     padding: 1em;
     flex: 1;
 }
 
-.invert{
-    background-color: #FFF;
-    color: #000;
-}
-
-.invert h1, .invert h2, .invert h3{
-    color: #000000;
-    text-align: left;
-}
-
-.whiteSeperator{
-    height: 20px;
-    background-color: #FFF;
-}
-
-.TO_BE_ADDED{
-    color: #FF0000;
-}
-
-
-#logo{
+.icon {
     height: 3em;
-    margin: 0.5em;
-}
-#topArticle {
-    margin-top: 4em;
-}
-#bottomFooter {
-    position: static;
-    top: 50px;
-    background-color: #101114;
-    color: #ffff00;
-    width: 100vw;
 }
 
-#homeRotatingBanner
-{
+#homeBannerImage {
+    position: relative;
+    overflow: hidden;
     display: flex;
-    background: #16181c;
+}
+
+#homeBannerGradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #16181c00 80%, #16181c);
+}
+
+#homeBannerImage img {
+    flex: 1;
+}
+
+#bottomFooter {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    position: static;
+    background-color: #101114;
+    width: 100vw;
+    padding: 1em;
 }
