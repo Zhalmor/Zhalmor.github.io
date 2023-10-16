@@ -9,7 +9,7 @@
     body {}
 
     .grid-container {
-        background-color: #00ff00;
+        /* background-color: #00ff00; */
         grid-template-areas:
             'gridSection1'
             'gridSection2'
@@ -28,7 +28,7 @@
     body {}
 
     .grid-container {
-        background-color: #ff0000;
+        /* background-color: #ff0000; */
         grid-template-areas:
             'gridSection1 gridSection2'
             'gridSection3 gridSection4';
@@ -40,7 +40,7 @@
 }
 
 /*---------------------------------------------*/
-/* Main Elements */
+/* Main Containers */
 header {
     background-color: #101114;
     top: 0;
@@ -50,8 +50,28 @@ header {
 
 }
 
+#dropdown {
+    /* display: none; */
+}
+
+#dropdown button {
+    cursor: pointer;
+}
+
+#dropdown #content {
+display: none;
+}
+
+#dropdown:hover #content{
+    display: block;
+}
+
 body {
-    margin-top: 4.5em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
 
@@ -76,12 +96,14 @@ main {
     flex-direction: column;
     text-align: center;
 
-    position: static;
     background-color: #101114;
     width: 100%;
     gap: 1em;
     padding: 1em 0em;
 
+    margin-top: auto;
+
+    bottom: 0em;
 }
 
 /*---------------------------------------------*/
@@ -147,10 +169,8 @@ h2 {
 
 /*---------------------------------------------*/
 
-#homeBannerImage {
-    position: relative;
-    overflow: hidden;
-    display: flex;
+#logo {
+    padding-top: 0.5em;
 }
 
 #homeBannerGradient {
