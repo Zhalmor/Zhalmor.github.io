@@ -1,2 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="download" class="icon glyph"><path d="M20,15a1,1,0,0,0-1,1V20a.22.22,0,0,1-.15.05H5.14C5.06,20,5,20,5,20V16a1,1,0,0,0-2,0v4a2.08,2.08,0,0,0,2.14,2H18.86A2.08,2.08,0,0,0,21,20V16A1,1,0,0,0,20,15Z"></path><path d="M11.29,16.71a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l4-4a1,1,0,0,0-1.42-1.42L13,13.59V3a1,1,0,0,0-2,0V13.59l-2.29-2.3a1,1,0,1,0-1.42,1.42Z"></path></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   fill="#000000"
+   width="600"
+   height="666.69702"
+   viewBox="0 0 18 20.000911"
+   id="download"
+   class="icon glyph"
+   version="1.1"
+   sodipodi:docname="Page2_Installatie.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <path
+     d="m 17,13 a 1,1 0 0 0 -1,1 v 4 a 0.22,0.22 0 0 1 -0.15,0.05 H 2.14 C 2.06,18 2,18 2,18 v -4 a 1,1 0 0 0 -2,0 v 4 a 2.08,2.08 0 0 0 2.14,2 H 15.86 A 2.08,2.08 0 0 0 18,18 v -4 a 1,1 0 0 0 -1,-1 z"
+     id="path1"
+     style="fill:#ffffff;fill-opacity:1" />
+  <path
+     d="m 8.29,14.71 a 1,1 0 0 0 0.33,0.21 0.94,0.94 0 0 0 0.76,0 1,1 0 0 0 0.33,-0.21 l 4,-4 A 1.0040916,1.0040916 0 0 0 12.29,9.2900001 L 10,11.59 V 1.0000001 a 1,1 0 0 0 -2,0 V 11.59 L 5.71,9.2900001 A 1.0040916,1.0040916 0 1 0 4.29,10.71 Z"
+     id="path2"
+     style="fill:#ffffff;fill-opacity:1" />
+</svg>

@@ -1,2 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="home" class="icon glyph"><path d="M21.71,12.71a1,1,0,0,1-1.42,0L20,12.42V20.3A1.77,1.77,0,0,1,18.17,22H16a1,1,0,0,1-1-1V15.1a1,1,0,0,0-1-1H10a1,1,0,0,0-1,1V21a1,1,0,0,1-1,1H5.83A1.77,1.77,0,0,1,4,20.3V12.42l-.29.29a1,1,0,0,1-1.42,0,1,1,0,0,1,0-1.42l9-9a1,1,0,0,1,1.42,0l9,9A1,1,0,0,1,21.71,12.71Z"></path></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   fill="#000000"
+   width="667.05322"
+   height="666.89545"
+   viewBox="0 0 20.011597 20.006863"
+   id="home"
+   class="icon glyph"
+   version="1.1"
+   sodipodi:docname="Page1_Home.svg"
+   inkscape:export-filename="Page1_Home.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="-66.473389"
+       originy="-66.473389"
+       spacingx="0.03"
+       spacingy="0.03"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="false" />
+  </sodipodi:namedview>
+  <path
+     d="m 19.715798,10.715798 a 1,1 0 0 1 -1.42,0 l -0.29,-0.29 v 7.88 a 1.77,1.77 0 0 1 -1.83,1.7 h -2.17 a 1,1 0 0 1 -1,-1 v -5.9 a 1,1 0 0 0 -1,-1 H 8.0057983 a 1,1 0 0 0 -1,1 v 5.9 a 1,1 0 0 1 -1,1 h -2.17 a 1.77,1.77 0 0 1 -1.83,-1.7 v -7.88 l -0.29,0.29 a 1,1 0 0 1 -1.41999996,0 1,1 0 0 1 0,-1.4199997 L 9.2957983,0.29579834 a 1,1 0 0 1 1.4199997,0 l 9,8.99999996 a 1,1 0 0 1 0,1.4199997 z"
+     id="path1"
+     style="fill:#ffffff;fill-opacity:1" />
+</svg>

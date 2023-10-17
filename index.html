@@ -7,25 +7,60 @@
     <title>Diffusion Basics</title>
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <link rel="icon" type="image/css" href="./img/Logo/favicon.svg">
+    <script src="./js/script.js"></script>
 </head>
 
 <body>
     <header>
-        <section class="flex-container">
-            <section id="dropdown">
-                <button>
-                    <img src="./img/Nav/Nav_Closed.svg">
-                </button>
-                <nav id="content">LINK TO PAGES</nav>
-            </section>
+        <section id="headerOnly" class="flex-container">
+            <button id="dropdownButton" onclick="dropdownMenu()">
+            </button>
             <a href="https://zhalmor.github.io/"><img id="logo" class="icon" src="./img/Logo/logo_Color_White.svg"
                     alt="Logo of Diffusion Basics"></a>
         </section>
+        <nav id="navPages">
+            <a href="index.html">
+                <button id="activePage" class="navLinks">
+                    <img class="navImage" src="./img/Nav/Page1_Home.svg">
+                    <p>Home</p>
+                </button>
+            </a>
+            <a href="installatie.html">
+                <button class="navLinks">
+                    <img class="navImage" src="./img/Nav/Page2_Installatie.svg">
+                    <p>Installatie</p>
+                </button>
+            </a>
+            <a href="generatie.html">
+                <button class="navLinks">
+                    <img class="navImage" src="./img/Nav/Page3_Generatie.svg">
+                    <p>Generatie</p>
+                </button>
+            </a>
+            <a href="modellen.html">
+                <button class="navLinks">
+                    <img class="navImage" src="./img/Nav/Page4_Modellen.svg">
+                    <p>Modellen</p>
+                </button>
+            </a>
+            <a href="extensies.html">
+                <button class="navLinks">
+                    <img class="navImage" src="./img/Nav/Page5_Extensies.svg">
+                    <p>Extensies</p>
+                </button>
+            </a>
+            <a href="contact.html">
+                <button class="navLinks">
+                    <img class="navImage" src="./img/Nav/Page6_Contact.svg">
+                    <p>Contact</p>
+                </button>
+            </a>
+        </nav>
     </header>
 
     <main>
         <figure class="flex-container">
-            <img src="./img/Page-Home/BannerCycle/01.png" alt="">
+            <img src="./img/Page-Home/BannerCycle/03.png" alt="Logo of Diffusion Basics">
             <div id="homeBannerGradient"></div>
         </figure>
         <article id="topArticle">

@@ -42,28 +42,11 @@
 /*---------------------------------------------*/
 /* Main Containers */
 header {
-    background-color: #101114;
     top: 0;
     z-index: 90;
     width: 100%;
     position: fixed;
 
-}
-
-#dropdown {
-    /* display: none; */
-}
-
-#dropdown button {
-    cursor: pointer;
-}
-
-#dropdown #content {
-display: none;
-}
-
-#dropdown:hover #content{
-    display: block;
 }
 
 body {
@@ -171,6 +154,7 @@ h2 {
 
 #logo {
     padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 #homeBannerGradient {
@@ -179,3 +163,73 @@ h2 {
     height: 100%;
     background: linear-gradient(to bottom, #16181c00 80%, #16181c);
 }
+
+#navPages{
+    color: #00ffff;
+    justify-content: left;
+    background-color: #101114;
+    width: fit-content;
+    padding: 0.5em;
+
+    display: none;
+    flex-direction: column;
+}
+
+#headerOnly
+{
+    height: 4em;
+    top: 0;
+    background-color: #101114;
+}
+
+
+
+#dropdownButton:hover {
+    background-color: #343639; /* Green */
+  }
+
+.navImage{
+    width: 2em;
+    height: 2em;
+    transition-duration: 0.4s;
+
+    
+}
+/* ------------------------------------------------------------------*/
+.navLinks{
+    background-size: contain;
+    background-color: #101114;
+    color: #fff;
+
+    width: 100%;
+    height: 4rem;
+    padding: 0.5em;
+
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.navLinks:hover{
+    background-color: #343639;
+}
+
+#dropdownButton{
+    background-image: url("../img/Nav/Nav_Closed.svg");
+    background-size: contain;
+    background-color: #101114;
+
+    width: 4rem;
+    height: 4rem;
+    padding: 0.5em;
+
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#dropdownButton:hover {
+    background-color: #343639; /* Green */
+  }
+
+  #activePage{
+    background-color: #9100ff;
+  }
