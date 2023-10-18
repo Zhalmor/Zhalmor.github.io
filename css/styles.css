@@ -8,8 +8,7 @@
 
     body {}
 
-    .grid-container {
-        /* background-color: #00ff00; */
+    #gridHome {
         grid-template-areas:
             'gridSection1'
             'gridSection2'
@@ -27,8 +26,7 @@
     /* PC View */
     body {}
 
-    .grid-container {
-        /* background-color: #ff0000; */
+    #gridHome {
         grid-template-areas:
             'gridSection1 gridSection2'
             'gridSection3 gridSection4';
