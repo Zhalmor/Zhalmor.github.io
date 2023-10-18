@@ -3,10 +3,38 @@
     border: 0em;
 }
 
+@media (min-width: 769px) {
+
+    /* PC View */
+    body {}
+
+    .mobile-only {
+        display: none;
+    }
+
+    #gridHome {
+        grid-template-areas:
+            'gridSection1 gridSection2'
+            'gridSection3 gridSection4';
+    }
+
+    #homeFooterLeft {
+        display: flex;
+    }
+
+    #homeFooterRight {
+        display: flex;
+    }
+}
+
 @media (max-width: 768px) {
     /* Mobile View */
 
     body {}
+
+    .pc-only {
+        display: none;
+    }
 
     #gridHome {
         grid-template-areas:
@@ -16,23 +44,11 @@
             'gridSection4';
     }
 
-    .pc-only {
+    #homeFooterLeft {
         display: none;
     }
-}
 
-@media (min-width: 769px) {
-
-    /* PC View */
-    body {}
-
-    #gridHome {
-        grid-template-areas:
-            'gridSection1 gridSection2'
-            'gridSection3 gridSection4';
-    }
-
-    .mobile-only {
+    #homeFooterRight {
         display: none;
     }
 }
@@ -47,9 +63,11 @@ header {
 }
 
 body {
-    min-height: 100vh;
+    min-height: 100rem;
     display: flex;
     flex-direction: column;
+
+    word-break: break-word;
 
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
@@ -140,7 +158,7 @@ h2 {
 
 .grid-container {
     display: grid;
-    gap: 4em;
+    gap: 1.5rem;
 }
 
 .flex-textBox {
@@ -182,7 +200,7 @@ h2 {
 #headerOnly {
     /* Prevents the navigation popout being a part of the header bar at the top */
     background-color: #101114;
-    display: flex ;
+    display: flex;
     justify-content: center;
 }
 
