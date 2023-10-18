@@ -1,6 +1,4 @@
 function dropdownMenu() {
-    console.log("Test???")
-
     let pages = document.getElementById("navPages")
     
     if (pages.style.display === "flex") {
@@ -9,4 +7,9 @@ function dropdownMenu() {
     else {
         pages.style.display = "flex";
     }
+}
+
+function cycleBanner() {
+    // Makes the homebanner image on the homescreen background
+    // cycle between a folder of images
 }
