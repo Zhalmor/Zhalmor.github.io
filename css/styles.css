@@ -63,7 +63,6 @@ header {
 }
 
 body {
-    min-height: 100rem;
     display: flex;
     flex-direction: column;
 
@@ -81,7 +80,7 @@ main {
 
     justify-content: center;
     align-items: center;
-    margin: 4rem auto;
+    margin: 4rem auto 0.5rem auto;
 }
 
 article{
@@ -98,14 +97,12 @@ article{
     gap: 1em;
     padding: 1em 0em;
 
-    margin-top: auto;
-
-    bottom: 0em;
+    position: absolute;
+            bottom: 0px;
 }
 
 .bottomFooterSection {
     align-items: center;
-    display: flex;
     flex-direction: column;
     text-align: center;
     flex: 1;
