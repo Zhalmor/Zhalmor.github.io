@@ -82,6 +82,9 @@ main {
     justify-content: center;
     align-items: center;
     margin: 4rem auto;
+}
+
+article{
     padding: 0 0.5rem;
 }
 
