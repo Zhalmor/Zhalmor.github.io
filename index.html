@@ -11,7 +11,7 @@
     <!-- TODO: FIX FONT -->
 </head>
 
-<body onload = "cycleBanner()">
+<body>
     <header>
         <section id="headerOnly">
             <button id="dropdownButton" onclick="dropdownMenu()">
@@ -60,17 +60,26 @@
     </header>
 
     <main>
-        <figure class="flex-container" >
+        <figure class="flex-container">
+            <section id="bannerText">
+                <h2 class="pc-only">Beginnen met Stable Diffusion?</h2>
+                <a href="./installatie.html">
+                    <button id="bannerCallToAction">
+                        Start Hier!
+                    </button>
+                </a>
+            </section>
             <img id="homeBanner" src="" alt="Logo of Diffusion Basics">
             <div id="homeBannerGradient"></div>
         </figure>
         <article>
             <article id="gridHome" class="grid-container">
                 <section id="gridSection1">
-                    <h2>Afgestemde modellen</h2>
-                    <p>De community werkt aan het maken van modellen door bemiddel van het te trainen op datasets van
-                        specifieke onderwerpen/stijlen. Hiermee krijgen ze uiteindelijk accuratere resultaten. Deze
-                        modellen kunnen gaan over bijvoorbeeld:
+                    <h2>Wat is Stable Diffusion?</h2>
+                    <p>Stable Diffusion (SD) is een geavanceerde AI-beeldgenerator dat lokaal gerund kan worden op
+                        persoonlijke computers (meer hierover in SD Setup). Het gene wat SD uniek maakt in vergelijking
+                        met zijn competitie, is dat SD opensource is met een bloeiende gemeenschap van individuelen die
+                        implementaties creëren die zijn afgeleid van deze open source-mentaliteit.
                     </p>
                     <ul>
                         <li>Stijlen</li>

@@ -1,6 +1,11 @@
+window.onload = function () {
+    rngOld = 0;
+    cycleBanner();
+}
+
 function dropdownMenu() {
     let pages = document.getElementById("navPages")
-    
+
     if (pages.style.display === "flex") {
         pages.style.display = "none";
     }
@@ -13,8 +18,15 @@ function cycleBanner() {
     // Makes the homebanner image on the homescreen background
     // cycle between a folder of images
 
-    let rng = Math.floor(Math.random() * 3);
-    document.getElementById("homeBanner").src = "../img/Page-Home/BannerCycle/" + rng + ".png";
+    let rngNew = Math.floor(Math.random() * 3);
 
-    setTimeout(cycleBanner, 5000);
+    if (rngNew != rngOld) {
+        document.getElementById("homeBanner").src = "../img/Page-Home/BannerCycle/" + rngNew + ".png";
+        rngOld = rngNew;
+        setTimeout(cycleBanner, 5000);
+    }
+    else
+    {
+        cycleBanner();
+    }
 }
