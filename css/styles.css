@@ -239,7 +239,7 @@ h2 {
     height: 4rem;
     padding: 0.5em;
 
-    
+
     align-self: left;
 }
 
@@ -258,32 +258,36 @@ h2 {
     padding: 1rem;
 
     width: auto;
-    top: 1rem;
     left: 50%;
-    transform: translate(-50%, 0);
+    top: 50%;
+
+    transform: translate(-50%, -50%);
 
     z-index: 2;
     position: absolute;
-    background-color: #10111466;
+    background-color: #101114aa;
 
     align-items: center;
-text-align: center;
+    text-align: center;
 
-font-size: 1rem;
+    font-size: 1rem;
     border-radius: 1rem;
 }
 
-button{
+button {
     transition-duration: 0.4s;
     cursor: pointer;
 }
 
-#bannerCallToAction{
+#bannerCallToAction {
     font-size: 1.5rem;
-    background-color: #9100ff;
+    background-color: #9100ff77;
+
+    outline-style: solid;
+    outline-color: #9100ff;
+
     color: #ffffff;
     border-radius: 0.5rem;
-    text-decoration: underline;
     font-weight: bold;
     margin: 0;
 }
