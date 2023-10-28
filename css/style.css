@@ -56,15 +56,6 @@
 
 /*---------------------------------------------*/
 /* Main Containers */
-header {
-    top: 0;
-    z-index: 9998;
-    width: 100%;
-    position: fixed;
-    background-color: #101114;
-    display: flex;
-}
-
 html,
 body {
     
@@ -81,6 +72,16 @@ body {
 
     color: #fff;
     background: #16181C;
+}
+
+header{
+    top: 0;
+    z-index: 9998;
+    width: 100%;
+    position: fixed;
+
+    background-color: #101114;
+    display: flex;
 }
 
 main {
