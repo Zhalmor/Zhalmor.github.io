@@ -194,6 +194,10 @@ h2 {
 
     display: none;
     flex-direction: column;
+    position: fixed;
+    z-index: 9999;
+
+    margin-top: 4rem;
 }
 
 #headerOnly {
@@ -264,6 +268,10 @@ h2 {
 
     font-size: 1rem;
     border-radius: 1rem;
+}
+
+a {
+    transition-duration: 0.4s;
 }
 
 button {
