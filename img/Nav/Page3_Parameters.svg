@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   fill="#000000"
+   width="800"
+   height="800"
+   viewBox="0 0 32 32"
+   id="icon"
+   version="1.1"
+   sodipodi:docname="parameter-svgrepo-com.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:export-bgcolor="#00000000" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">&#10;      .cls-1 {&#10;        fill-rule: evenodd;&#10;      }&#10;&#10;      .cls-2 {&#10;        fill: none;&#10;      }&#10;    </style>
+  </defs>
+  <path
+     d="M 28,13 V 8 A 2.0023,2.0023 0 0 0 26,6 h -3 v 2 h 3 v 5 A 3.9756,3.9756 0 0 0 27.3823,16 3.9756,3.9756 0 0 0 26,19 v 5 h -3 v 2 h 3 a 2.0023,2.0023 0 0 0 2,-2 v -5 a 2.0023,2.0023 0 0 1 2,-2 v -2 a 2.0023,2.0023 0 0 1 -2,-2 z"
+     id="path1"
+     style="fill:#ffffff;fill-opacity:1" />
+  <path
+     id="Combined-Shape"
+     class="cls-1"
+     d="m 17,9 -0.857,3 h 2 L 19,9 h 2 l -0.857,3 H 22 v 2 h -2.428 l -1.143,4 H 21 v 2 H 17.857 L 17,23 h -2 l 0.857,-3 h -2 L 13,23 h -2 l 0.857,-3 H 10 v -2 h 2.429 l 1.143,-4 H 11 v -2 h 3.143 L 15,9 Z m 0.572,5 h -2 l -1.143,4 h 2 z"
+     style="fill:#ffffff;fill-opacity:1" />
+  <path
+     d="M 6,13 V 8 H 9 V 6 H 6 A 2.0023,2.0023 0 0 0 4,8 v 5 a 2.0023,2.0023 0 0 1 -2,2 v 2 a 2.0023,2.0023 0 0 1 2,2 v 5 a 2.0023,2.0023 0 0 0 2,2 H 9 V 24 H 6 V 19 A 3.9756,3.9756 0 0 0 4.6177,16 3.9756,3.9756 0 0 0 6,13 Z"
+     id="path2"
+     style="fill:#ffffff;fill-opacity:1" />
+  <rect
+     id="_Transparent_Rectangle_"
+     data-name="&lt;Transparent Rectangle&gt;"
+     class="cls-2"
+     width="32"
+     height="32"
+     x="0"
+     y="0" />
+</svg>

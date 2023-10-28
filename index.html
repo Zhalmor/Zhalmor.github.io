@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Diffusion Basics</title>
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <link rel="icon" type="image/css" href="./img/Logo/favicon.svg">
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script src="./js/script.js"></script>
-    <!-- TODO: FIX FONT -->
 </head>
 
 <body>
@@ -32,22 +33,22 @@
                     <p>Installatie</p>
                 </button>
             </a>
+            <a href="parameters.html">
+                <button class="navLinks">
+                    <img class="navImage" src="./img/Nav/Page3_Parameters.svg">
+                    <p>Parameters</p>
+                </button>
+            </a>
             <a href="generatie.html">
                 <button class="navLinks">
-                    <img class="navImage" src="./img/Nav/Page3_Generatie.svg">
+                    <img class="navImage" src="./img/Nav/Page4_Generatie.svg">
                     <p>Generatie</p>
                 </button>
             </a>
             <a href="modellen.html">
                 <button class="navLinks">
-                    <img class="navImage" src="./img/Nav/Page4_Modellen.svg">
+                    <img class="navImage" src="./img/Nav/Page5_Modellen.svg">
                     <p>Modellen</p>
-                </button>
-            </a>
-            <a href="extensies.html">
-                <button class="navLinks">
-                    <img class="navImage" src="./img/Nav/Page5_Extensies.svg">
-                    <p>Extensies</p>
                 </button>
             </a>
             <a href="contact.html">
@@ -69,79 +70,86 @@
                     </button>
                 </a>
             </section>
-            <img id="homeBanner" src="" alt="Logo of Diffusion Basics">
+            <img id="homeBanner" alt="Logo of Diffusion Basics">
+
+            <!-- This div doesn't contain anything useful for users or searchengines, it only adds a gradient infront of the image, that's why I didn't make it semantic  -->
             <div id="homeBannerGradient"></div>
         </figure>
-        <article>
-            <article id="gridHome" class="grid-container">
-                <section id="gridSection1">
-                    <h2>Wat is Stable Diffusion?</h2>
-                    <p>Stable Diffusion (SD) is een geavanceerde AI-beeldgenerator dat lokaal gerund kan worden op
-                        persoonlijke computers (meer hierover in SD Setup). Het gene wat SD uniek maakt in vergelijking
-                        met zijn competitie, is dat SD opensource is met een bloeiende gemeenschap van individuelen die
-                        implementaties creëren die zijn afgeleid van deze open source-mentaliteit.
-                    </p>
-                    <ul>
-                        <li>Stijlen</li>
-                        <li>Karakters</li>
-                        <li>Objecten</li>
-                        <li>Concepten</li>
-                    </ul>
-                </section>
 
-                <section id="gridSection2">
-                    <h2>Extensies</h2>
-                    <p>Buiten de functionaliteit dat SD standaard bied zoals: Tekst-to-Image, Image-to-Image, Upscaling
-                        ect. Zijn er ook gemeenschap gedreven extensies en tool die de gebruiker verder kunnen helpen in
-                        het creëren en manipuleren van AI-gegenereerde afbeeldingen, zoals:
-                    <ul>
-                        <li>Dreambooth: Makkelijk trainen van modellen</li>
-                        <li>ControlNet: Herkennen en toepassen van afbeelding-dieptemappen,<br>
-                            contouren & poses voor het lezen en creëren van afbeeldingen.</li>
-                    </ul>
-                    </p>
-                </section>
-                <section id="gridSection3">
-                    <h2>Updates</h2>
-                    <p>De webUI en extensies die gebruikt worden, zijn zowat allemaal publieke GitHub repositories.
-                        Hierdoor kan alles simpel geüpdate worden met een simpele pull-request (dat geautomatiseerd kan
-                        worden, meer hierover in Installatie)
-                    </p>
-                </section>
-                <section id="gridSection4">
-                    <h2>Updates</h2>
-                    <p>De webUI en extensies die gebruikt worden, zijn zowat allemaal publieke GitHub repositories.
-                        Hierdoor kan alles simpel geüpdate worden met een simpele pull-request (dat geautomatiseerd kan
-                        worden, meer hierover in Installatie)
-                    </p>
-                </section>
-            </article>
-        </article>
+        <section id="gridHome" class="grid-container">
+            <section id="gridSection1">
+                <h2>Wat is Stable Diffusion?</h2>
+                <p>Stable Diffusion (SD) is een geavanceerde AI-beeldgenerator dat lokaal gerund kan worden op
+                    persoonlijke computers (meer hierover in Installatie). Het gene wat SD uniek maakt in
+                    vergelijking met zijn competitie zoals; DALL&middot;E 3 of Midjourney, is dat SD opensource is met
+                    een
+                    bloeiende gemeenschap van individuelen die implementaties creëren en delen die zijn afgeleid van
+                    deze open source-mentaliteit. Zoals:
+                </p>
+                <ul>
+                    <li>Stijlen</li>
+                    <li>Karakters</li>
+                    <li>Extensies</li>
+                    <li>Applicatie in 3D-modellering</li>
+                    <li>Video Generatie</li>
+                </ul>
+            </section>
+            <section id="gridSection2">
+                <h2>Extensies</h2>
+                <p>Buiten de functionaliteit dat SD standaard bied zoals: Tekst-to-Image, Image-to-Image, Upscaling
+                    ect. Zijn er ook gemeenschap gedreven extensies en tool die de gebruiker verder kunnen helpen in
+                    het creëren en manipuleren van AI-gegenereerde afbeeldingen, zoals:
+                <ul>
+                    <li>Dreambooth: Makkelijk trainen van modellen</li>
+                    <li>ControlNet: Herkennen en toepassen van afbeelding-dieptemappen,
+                        contouren & poses voor het lezen en creëren van afbeeldingen.</li>
+                </ul>
+                </p>
+            </section>
+            <section id="gridSection3">
+                <h2>Updates</h2>
+                <p>De webUI en extensies die gebruikt worden, zijn zowat allemaal publieke GitHub repositories.
+                    Hierdoor kan alles simpel geüpdate worden met een simpele pull-request (dat geautomatiseerd kan
+                    worden, meer hierover in Installatie)
+                </p>
+            </section>
+            <section id="gridSection4">
+                <h2>Updates</h2>
+                <p>De webUI en extensies die gebruikt worden, zijn zowat allemaal publieke GitHub repositories.
+                    Hierdoor kan alles simpel geüpdate worden met een simpele pull-request (dat geautomatiseerd kan
+                    worden, meer hierover in Installatie)
+                </p>
+            </section>
+        </section>
     </main>
     <footer id="bottomFooter">
-        <section id="homeFooterLeft" class="bottomFooterSection">
+        <section id="bottomFooterLeft" class="bottomFooterSection">
             <h2>Navigatie</h2>
             <a href="./index.html">Home</a>
             <a href="./installatie.html">Installatie</a>
+            <a href="./parameters.html">Parameters</a>
             <a href="./generatie.html">Generatie</a>
             <a href="./modellen.html">Modellen</a>
-            <a href="./extensies.html">Extensies</a>
             <a href="./contact.html">Contact</a>
         </section>
 
         <section class="bottomFooterSection">
             <a href="https://github.com/Zhalmor/Zhalmor.github.io"><img class="icon"
                     src="./img/github-mark-white.svg"></a>
-            <p>&copy;2023 | Webdesign Project ‘Diffusion Basics’ <a href="https://www.inholland.nl/">@InHolland
-                    Haarlem</a>
+            <p>&copy;2023 | Webdesign Project ‘Diffusion Basics’ <a href="https://www.inholland.nl/">@InHolland</a>
             </p>
         </section>
 
-        <section id="homeFooterRight" class="bottomFooterSection">
+        <section id="bottomFooterRight" class="bottomFooterSection">
             <h2>Contact</h2>
             <a href="./contact.html">Contact Pagina</a>
         </section>
     </footer>
+    <section id="cookieMessage">
+        <h2>This is a fake cookie message</h2>
+        <button id="cookieButtonAccept" class="cookieButtons">Accept</button>
+        <button id="cookieButtonDecline" class="cookieButtons">Reject</button>
+    </section>
 </body>
 
 </html>
