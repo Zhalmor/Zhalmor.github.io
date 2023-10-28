@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -14,12 +14,12 @@
 
 <body>
     <header>
-        <section id="headerOnly">
+        <div id="headerOnly">
             <button id="dropdownButton" onclick="dropdownMenu()">
             </button>
             <a id="logo" href="https://zhalmor.github.io/"><img class="icon" src="./img/Logo/logo_Color_White.svg"
                     alt="Logo of Diffusion Basics"></a>
-        </section>
+        </div>
         <nav id="navPages">
             <a href="index.html">
                 <button id="activePage" class="navLinks">
@@ -80,44 +80,61 @@
             <section id="gridSection1">
                 <h2>Wat is Stable Diffusion?</h2>
                 <p>Stable Diffusion (SD) is een geavanceerde AI-beeldgenerator dat lokaal gerund kan worden op
-                    persoonlijke computers (meer hierover in Installatie). Het gene wat SD uniek maakt in
-                    vergelijking met zijn competitie zoals; DALL&middot;E 3 of Midjourney, is dat SD opensource is met
-                    een
-                    bloeiende gemeenschap van individuelen die implementaties creëren en delen die zijn afgeleid van
-                    deze open source-mentaliteit. Zoals:
+                    persoonlijke computers. Het gene wat SD uniek maakt in vergelijking met zijn competitie zoals;
+                    DALL&middot;E 3 of Midjourney, is dat SD opensource is met een bloeiende gemeenschap van
+                    individuelen die implementaties creëren en delen die zijn afgeleid van deze open source-mentaliteit.
+                    Zoals:
+                </p>
+                <ul>
+                    <li>Generatie inspiratie</li>
+                    <li>Extensies</li>
+                    <li>Applicatie in 3D-modellering</li>
+                    <li>Video Generatie</li>
+                    <li>En veel meer!</li>
+                </ul>
+                <p>
+                    <strong> Stable Diffusion </strong> kan voor persoonlijk of zakelijk gebruik gebruikt worden. Denk
+                    bijvoorbeeld aan: 2D
+                    gametextures, YouTube thumbnails, promotiemateriaal en kunstinspiratie.
+                </p>
+            </section>
+            <section id="gridSection2">
+                <h2>Fijn afgestemde modellen</h2>
+                <p>De community werkt samen aan het maken van modellen door bemiddel van het te trainen op datasets van
+                    specifieke onderwerpen, stijlen of andere modellen. Hiermee krijgen ze uiteindelijk een accuratere
+                    gegenereerde output voor hun gewenste getrainde input. Deze modellen kunnen checkpoints zijn, wat
+                    wilt zeggen dat ze de gewichten, interpetatie & output van het generatieprocess grooschalig bepalen.
+                    Maar modellen kunnen ook bestaan uit kleinschaligere implementaties genaamd LoRA’s
+                    (Low-Ranking-Adaptation), die tijdens het generatieprocess extra gewichtlagen toevoegen. Dit soort
+                    model kan samen gebruikt worden met andere LoRA’s, en kan ingesteld worden qua hoeveel invloed ze
+                    hebben op het eindresultaat. Modellen hebben invloed op onder ander:
                 </p>
                 <ul>
                     <li>Stijlen</li>
                     <li>Karakters</li>
-                    <li>Extensies</li>
-                    <li>Applicatie in 3D-modellering</li>
-                    <li>Video Generatie</li>
+                    <li>Objecten</li>
+                    <li>Concepten</li>
+                    <li>Geometrie</li>
+                    <li>Dimensie begrip</li>
+                    <li>Afbeeldingformaat</li>
                 </ul>
-            </section>
-            <section id="gridSection2">
-                <h2>Extensies</h2>
-                <p>Buiten de functionaliteit dat SD standaard bied zoals: Tekst-to-Image, Image-to-Image, Upscaling
-                    ect. Zijn er ook gemeenschap gedreven extensies en tool die de gebruiker verder kunnen helpen in
-                    het creëren en manipuleren van AI-gegenereerde afbeeldingen, zoals:
-                <ul>
-                    <li>Dreambooth: Makkelijk trainen van modellen</li>
-                    <li>ControlNet: Herkennen en toepassen van afbeelding-dieptemappen,
-                        contouren & poses voor het lezen en creëren van afbeeldingen.</li>
-                </ul>
-                </p>
             </section>
             <section id="gridSection3">
-                <h2>Updates</h2>
-                <p>De webUI en extensies die gebruikt worden, zijn zowat allemaal publieke GitHub repositories.
-                    Hierdoor kan alles simpel geüpdate worden met een simpele pull-request (dat geautomatiseerd kan
-                    worden, meer hierover in Installatie)
+                <h2>Extensies</h2>
+                <p>Buiten de functionaliteit dat SD standaard bied zoals: Tekst-to-Image, Image-to-Image, Upscaling ect.
+                    Zijn er ook gemeenschap gedreven extensies en tools die de gebruiker verder kan helpen in het
+                    creëren en manipuleren van AI-gegenereerde afbeeldingen, zoals:
                 </p>
+                <ul>
+                    <li>Dreambooth: Makkelijk trainen van modellen</li>
+                    <li>ControlNet: Herkennen en toepassen van afbeelding-dieptemappen, contouren & poses voor het lezen
+                        en creëren van afbeeldingen.</li>
+                </ul>
             </section>
             <section id="gridSection4">
                 <h2>Updates</h2>
-                <p>De webUI en extensies die gebruikt worden, zijn zowat allemaal publieke GitHub repositories.
-                    Hierdoor kan alles simpel geüpdate worden met een simpele pull-request (dat geautomatiseerd kan
-                    worden, meer hierover in Installatie)
+                <p>De webUI en extensies die gebruikt worden, zijn zowat allemaal publieke GitHub repositories. Hierdoor
+                    kan alles simpel geüpdate worden met een simpele pull-request dat geautomatiseerd kan worden.
                 </p>
             </section>
         </section>
