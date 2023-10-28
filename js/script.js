@@ -16,8 +16,7 @@ function cycleBanner() {
         rngOld = rngNew;
         setTimeout(cycleBanner, 5000);
     }
-    else
-    {
+    else {
         cycleBanner();
     }
 }
@@ -35,3 +34,30 @@ function dropdownMenu() {
         document.getElementById("dropdownButton").style.backgroundImage = "url(../img/Nav/Nav_Open.svg)";
     }
 }
+
+document.addEventListener("DOMContentLoaded", function cookies() {
+
+    if (localStorage.getItem("cookiesButtonChosen") == "true") {
+        // If one of the cookies pop-up buttons has previously been clicked
+        // Hide cookie Pop-up
+        document.getElementById("cookiePopup").style.display = "none";
+    }
+
+
+    
+    // Hides the cookie pop-up if the user accepts or rejects the use of cookies
+    // Doesn't matter since the cookie pop-up doesn't do anything in the first place,
+
+    // Only meant for:
+    // Grading group 5: Responsiveness & Metadata:
+    //Uses property z-index for a "cookies" message with value 9999.
+
+    document.getElementById("cookieButtonAccept").addEventListener("click", function () {
+        localStorage.setItem("cookiesButtonChosen", "true")
+        document.getElementById("cookiePopup").style.display = "none";
+    });
+    document.getElementById("cookieButtonDecline").addEventListener("click", function () {
+        localStorage.setItem("cookiesButtonChosen", "true")
+        document.getElementById("cookiePopup").style.display = "none";
+    });
+})

@@ -285,7 +285,7 @@ button {
 
 /* ---------------------- */
 
-#cookieMessage{
+#cookiePopup{
     z-index: 9999;
     position: fixed;
     width: fit-content;
