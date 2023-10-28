@@ -13,14 +13,14 @@
 </head>
 
 <body>
-    <header>
+    <header id="topHeader">
 
             <button id="dropdownButton" onclick="dropdownMenu()">
             </button>
             <a id="logo" href="https://zhalmor.github.io/"><img class="icon" src="./img/Logo/logo_Color_White.svg"
                     alt="Logo of Diffusion Basics"></a>
 
-
+        
     </header>
     <nav id="navPages">
         <a href="index.html" id="activePage" class="navLinks">
@@ -63,11 +63,11 @@
                 alt="Banner image of Diffusion Basics homescreen">
 
             <!-- This div doesn't contain anything useful for users or searchengines, it only adds a gradient infront of the image, that's why I didn't make it semantic  -->
-            <span id="homeBannerGradient">
-            </span>
+            <div id="homeBannerGradient">
+            </div>
         </figure>
 
-        <span id="gridHome" class="grid-container">
+        <header id="gridHome" class="grid-container">
             <section id="gridSection1">
                 <h2>Wat is Stable Diffusion?</h2>
                 <p>Stable Diffusion (SD) is een geavanceerde AI-beeldgenerator dat lokaal gerund kan worden op
@@ -128,7 +128,7 @@
                     kan alles simpel geüpdate worden met een simpele pull-request dat geautomatiseerd kan worden.
                 </p>
             </section>
-        </span>
+        </header>
     </main>
     <footer id="bottomFooter">
         <section id="bottomFooterLeft" class="bottomFooterSection">
@@ -141,12 +141,12 @@
             <a href="./contact.html">Contact</a>
         </section>
 
-        <span class="bottomFooterSection">
+        <section class="bottomFooterSection">
             <a href="https://github.com/Zhalmor/Zhalmor.github.io"><img class="icon" src="./img/github-mark-white.svg"
                     alt="Logo icon of Github"></a>
             <p>&copy;2023 | Webdesign Project ‘Diffusion Basics’ <a href="https://www.inholland.nl/">@InHolland</a>
             </p>
-        </span>
+        </section>
 
         <section id="bottomFooterRight" class="bottomFooterSection">
             <h2>Contact</h2>
