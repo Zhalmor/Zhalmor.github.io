@@ -1,0 +1,82 @@
+@media (min-width: 769px) {
+
+    /* PC View */
+
+    #homeGridContainer0 {
+        grid-template-areas:
+            'homeGrid00 homeGrid01'
+            'homeGrid02 homeGrid03';
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Mobile View */
+
+    #homeGridContainer0 {
+        grid-template-areas:
+            'homeGrid00'
+            'homeGrid01'
+            'homeGrid02'
+            'homeGrid03';
+    }
+}
+
+/* -------------------- */
+
+#homeBannerFigure {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    flex: 1;
+}
+
+#homeBannerImage {
+    width: 100%;
+}
+
+#homeBannerText {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0.5rem;
+
+    width: fit-content;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 9997;
+    position: absolute;
+    background-color: #101114bb;
+
+    gap: 0.5rem;
+
+    align-items: center;
+    text-align: center;
+
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+#homeBannerCallToAction {
+    font-size: 1.5rem;
+    background-color: #9100ff77;
+
+    outline-style: solid;
+    outline-color: #9100ff;
+
+    color: #ffffff;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    margin: 0;
+
+    text-decoration: none;
+}
+
+#homeBannerCallToAction:hover {
+    background-color: #9100ff;
+}
+
+/* -------------------- */

@@ -41,7 +41,7 @@ function cycleBanner() {
     // If the random number being picked is not the same as the last picked image
     if (rngNew != rngOld) {
         // Sets the homeBanner image to the new image and then wait 5 seconds to cycle again
-        document.getElementById("homeBanner").src = "../img/Page-Home/BannerCycle/" + rngNew + ".png";
+        document.getElementById("homeBannerImage").src = "../img/Page-Home/BannerCycle/" + rngNew + ".png";
         rngOld = rngNew;
         setTimeout(cycleBanner, 5000);
     }
@@ -53,7 +53,7 @@ function cycleBanner() {
 
 
 function dropdownMenu() {
-    let pages = document.getElementById("navPages")
+    let pages = document.getElementById("navPopout")
 
     // Toggles the visibility of the navigation menu
     if (pages.style.display == "flex") {
