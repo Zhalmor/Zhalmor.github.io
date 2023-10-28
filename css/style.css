@@ -74,8 +74,6 @@ body {
     display: flex;
     flex-direction: column;
 
-    word-break: break-word;
-
     font-family: "stefRoboto";
     font-size: 16px;
 
