@@ -61,6 +61,8 @@ header {
     z-index: 9998;
     width: 100%;
     position: fixed;
+    background-color: #101114;
+    display: flex;
 }
 
 html,
@@ -198,12 +200,6 @@ h2 {
     z-index: 9999;
 
     margin-top: 4rem;
-}
-
-#headerOnly {
-    /* Prevents the navigation popout being a part of the header bar at the top */
-    background-color: #101114;
-    display: flex;
 }
 
 .navImage {
