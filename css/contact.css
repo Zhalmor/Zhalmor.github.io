@@ -1,0 +1,17 @@
+#contactForm {
+    max-width: 37.5rem;
+    background-color: #9100ff;
+    border-radius: 1rem;
+
+    margin: 0 auto;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: stretch;
+}
+
+#contactForm * {
+    margin: 0rem;
+}

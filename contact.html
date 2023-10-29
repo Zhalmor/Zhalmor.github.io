@@ -9,7 +9,7 @@
     <link rel="icon" type="image/css" href="./img/Logo/favicon.svg">
 
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/contact.css">
     <script src="./js/script.js"></script>
 </head>
 
@@ -49,7 +49,46 @@
         </a>
     </nav>
     <main>
+        <form id="contactForm">
+            <fieldset>
+                <legend>Aanhef*:</legend>
+                <label for="Dhr">
+                    <input type="radio" name="color" value="red"> Dhr
+                </label>
 
+                <label for="Mevr.">
+                    <input type="radio" name="color" value="green"> Mevr.
+                </label>
+
+                <label for="Anders">
+                    <input type="radio" name="color" value="blue"> Anders
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Voornaam*:</legend>
+                <input required>
+
+                <legend>Achternaam*:</legend>
+                <input required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Email*:</legend>
+                <input type="email" required>
+            </fieldset>
+            <fieldset>
+                <legend>Telefoon nr.:</legend>
+                <input type="tel">
+            </fieldset>
+            <fieldset>
+                <legend>Bericht</legend>
+                <input required>
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="Versturen">
+            </fieldset>
+        </form>
     </main>
     <footer id="bottomFooter">
         <section id="bottomFooterLeft" class="bottomFooterSection">
