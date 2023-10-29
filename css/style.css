@@ -82,7 +82,7 @@ main {
 
     margin: 4rem auto 1rem auto;
 
-    >* {
+    >section {
         margin-bottom: 4rem;
 
         >* {
