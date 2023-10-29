@@ -81,8 +81,9 @@ main {
     flex: 1;
 
     margin: 4rem auto 1rem auto;
+}
 
-    > section {
+main > section {
         margin-bottom: 4rem;
 
         > * {
@@ -91,7 +92,6 @@ main {
             margin-bottom: 1rem;
         }
     }
-}
 
 #bottomFooter {
     display: flex;
@@ -136,6 +136,20 @@ h2 {
 button {
     transition-duration: 0.4s;
     cursor: pointer;
+}
+
+figure{
+    width: fit-content;
+}
+
+figure img{
+    max-width: max-content;
+    width: 100%;
+}
+
+figure figcaption {
+    text-align: center;
+    font-style: italic;
 }
 
 /*---------------------------------------------*/
