@@ -1,15 +1,19 @@
 @media (min-width: 769px) {
 
     /* PC View */
+    /* Ik weet dat hier een betere manier voor is, maar ik moest rekening houden met dat de meeste elementen al classes hadden
+    En ik moet rekening met de deadline houden*/
 
     #parametersGridContainer1 {
         grid-template-areas:
             'parametersGrid1_1 parametersGrid1_2 parametersGrid1_3 parametersGrid1_4';
     }
+
     #parametersGridContainer2 {
         grid-template-areas:
             'parametersGrid2_1 parametersGrid2_2 parametersGrid2_3 parametersGrid2_4';
     }
+
     #parametersGridContainer3 {
         grid-template-areas:
             'parametersGrid3_1 parametersGrid3_2 parametersGrid3_3 parametersGrid3_4';
@@ -26,11 +30,13 @@
             'parametersGrid1_1 parametersGrid1_3'
             'parametersGrid1_2 parametersGrid1_4';
     }
+
     #parametersGridContainer2 {
         grid-template-areas:
             'parametersGrid2_1 parametersGrid2_3'
             'parametersGrid2_2 parametersGrid2_4';
     }
+
     #parametersGridContainer3 {
         grid-template-areas:
             'parametersGrid3_1 parametersGrid3_3'

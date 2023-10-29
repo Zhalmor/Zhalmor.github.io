@@ -10,6 +10,8 @@
 
 @media (min-width: 769px) {
 
+    
+
     /* PC View */
     .mobile-only {
         display: none;
@@ -88,18 +90,16 @@ main {
 }
 
 main>section {
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
 
 main>section>* {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 1rem;
 }
 
 #bottomFooter {
     box-sizing: border-box;
-    
+
     display: flex;
     text-align: center;
 
@@ -134,26 +134,6 @@ button {
     cursor: pointer;
 }
 
-figure {
-    max-width: 100%;
-    /* Ensure the figure doesn't exceed the viewport width */
-    margin: 0;
-    /* Remove default margin */
-    width: auto;
-}
-
-figure img {
-    max-width: 100%;
-    display: block;
-    margin: 0.0rem auto;
-}
-
-figure figcaption {
-    text-align: center;
-    font-style: italic;
-    color: #aaaaaa;
-}
-
 /*---------------------------------------------*/
 /* Containers & Content */
 
@@ -165,9 +145,8 @@ figure figcaption {
 
 .figureGridContainer {
     display: grid;
+    gap: 0.5rem;
 }
-
-.gridElement {}
 
 .textBox {
     display: flex;
@@ -189,9 +168,28 @@ figure figcaption {
     margin: auto;
 }
 
+figure {
+    max-width: 100%;
+    margin: 0;
+    width: auto;
+}
+
+figure img {
+    max-width: 100%;
+    display: block;
+    margin: 0.0rem auto;
+}
+
+figure figcaption {
+    text-align: center;
+    font-style: italic;
+    color: #aaaaaa;
+}
+
 
 .frontCaption {
     position: relative;
+    max-width: 25vw;
 }
 
 .frontCaption figcaption {

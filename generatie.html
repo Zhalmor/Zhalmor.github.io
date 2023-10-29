@@ -49,7 +49,100 @@
         </a>
     </nav>
     <main>
+        <section>
+            <h1>Generatie</h1>
+            <h2>Gewichten</h2>
+            <p>Je kan het gewicht van delen van je prompt benadrukken door gebruik te maken van haakjes/parentheses of
+                vierkante haakjes/square brackets.
+            </p>
+            <p>() Haakjes zorgen voor een hogere benadrukking door het gewicht te vermenigvuldigen met 1,1.
+            </p>
+            <p>[] Vierkante haakjes zorgen voor een lagere benadrukking door het gewicht te delen door 1,1.
+            </p>
+            <p>: Ook kan je gebruik maken van een dubbelepunt om de nadruk zelf te bepalen ipv. haakjes te herhalen.
+            </p>
 
+            <p>De prompt met 6x haakjes:Lion wearing ((((((jeweled crown))))))</p>
+            <p>Is dus hetzelfde als:</p>
+            <p>1 * 1,1^6 = (jeweled crown:1.772)</p>
+
+            <p>De prompt met 6x vierkante haakjes: Lion wearing [[[[[[jeweled crown]]]]]]</p>
+            <p>Is dus hetzelfde als:</p>
+            <p>1 / 1,1^6 = (jeweled crown:0.565)</p>
+        </section>
+        <section>
+            <h2>Prompts mengen</h2>
+            <p>Je kan meerdere keywords combineren door gebruik te maken van deze syntax: [keyword1: keyword 2: factor]
+                Hier bepaal je de waarde met een factorwaarde tussen de 0.0 en 1.0. Dit bepaald de benadrukking op de
+                gewichten van de 2 keywords. Met 1.0 de hoogste waarde van keyword1 en 0.0 de hoogste waarde van
+                keyword2. portrait of [cat: dog: 1.0] zal compleet kat zijn, tewijl: portrait of [cat: dog: 0.0]
+                compleet hond zal zijn. Let er op dat je altijd het getal afsluit met een decimaal, anders werkt het
+                niet.
+                Elke generatie hieronder gebruikt DreamShaper8 & deelt exact dezelfde parameters, instellingen, prompt &
+                seed. (Behalve de factor in de prompt menging)</p>
+        </section>
+
+        <section>
+            <h1>img2img</h1>
+            <section>
+                <h2>Wat is image-to-image?</h2>
+                <p>Image-to-image is het toepassen van je prompt op een al bestaande afbeelding, hierin kan je de
+                    sterkte
+                    van de denoising en dus verandering van 0.0 (er verandert niks) tot 1.0 (het is een compleet nieuwe
+                    afbeelding) veranderen. Hieronder zijn meerdere toepassingen van image-to-image</p>
+
+                <h2>Pose herkenning</h2>
+                <p>Met het gebruik van bijvoorbeeld een houten anatomie pop of een papieren sketch kan je best simpel
+                    poses,
+                    contouren & schaal aangeven voor het model om na te bootsen.</p>
+                <p> Positive Prompts: Wizard in robes holding staff</p>
+                <p> Model: DreamShaper 8</p>
+                <p> Denoising Strength: 0.7</p>
+
+                <p> Positive Prompts: Wizard in robes sitting at edge of building, cyberpunk, future</p>
+                <p> Negative Prompts: blurred, bad quality, low quality, bad face, low quality face, bad hands,
+                    easynegative, EasyNegativeV2</p>
+                <p> Model: DreamShaper 8</p>
+                <p> Denoising Strength: 0.7</p>
+
+                <p> Positive Prompts: Giant robot walking through city</p>
+                <p> Model: DreamShaper 8</p>
+                <p> Denoising Strength: 0.6</p>
+            </section>
+
+            <section>
+                <h2>Inpainting</h2>
+                <p>Inpainting is het aangeven van specifieke plekken binnen een afbeelding die verandert moeten worden.
+                </p>
+                <p>Positive Prompt: huge tophat on statue head</p>
+                <p>Model: DreamShaper 8</p>
+                <p>Denoising Strength 1: 0.7</p>
+            </section>
+
+            <section>
+                <h2>Selectie proces</h2>
+                <p>Door eerst gebruik te maken van txt2img kan je vervolgens de beste afbeelding gegenereerde afbeelding
+                    kiezen om mee verder te gaan in img2img, hier kan je extra details/veranderingen prompten dat je
+                    wilt zien. Met deze beter gestemde resultaten kan je weer verder gaan om een nog specifieker gewenst
+                    resultaat te bereiken.
+                </p>
+                <p>Text2Img Positive Prompts: warframe tenno, solo, by Frederick Hammersley</p>
+                <p> Negative Prompts: group, duo, trio, human, skin</p>
+                <p>Model: DreamShaper 8</p>
+                <p>Img2img prompts: red accents, gold accents, black, shoulders, facing sideways</p>
+                <p>Denoising Strength: 0.7</p>
+            </section>
+
+            <section>
+                <h1>Upscaling</h1>
+                <p>Upscaling is een techniek om de beeld kwaliteit van een bestaande afbeelding te vergroten. In het
+                    geval van Stable Diffusion is het zo dat upscaling het best gedaan kan worden voor:
+                </p>
+                <p> 1: Afbeeldingen met weinig ruis/patronen/kleuren (Zie voorbeelden hieronder)</p>
+                <p> 2: Afbeelding die al een hoge beeldkwaliteit hebben.</p>
+
+            </section>
+        </section>
     </main>
     <footer id="bottomFooter">
         <section id="bottomFooterLeft" class="bottomFooterSection">
