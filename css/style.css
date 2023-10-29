@@ -116,10 +116,10 @@ main>* {
 .bottomFooterSection {
     flex-direction: column;
     flex: 1;
+}
 
-    > *{
-        font-family: "stefRoboto_Mono";
-    }
+.bottomFooterSection > *{
+    font-family: "stefRoboto_Mono";
 }
 
 .bottomFooterH2 {
@@ -154,7 +154,7 @@ h2{
 a {
     font-weight: bold;
     transition-duration: 0.4s;
-    color: #b293ff
+    color: #b293ff;
 }
 
 button {
@@ -317,4 +317,17 @@ figure figcaption {
 #cookieButtonDecline {
     background-color: #EE0000;
     color: #FFFFFF;
+}
+
+/*---------------------------------------------*/
+/* Inline text colors */
+
+.textGreen {
+    color: #008800;;
+}
+.textRed {
+    color: #EE0000;;
+}
+.textPurple{
+    color: #b293ff;
 }

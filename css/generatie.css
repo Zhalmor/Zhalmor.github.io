@@ -58,3 +58,20 @@
     grid-template-areas:
         '1 2';
 }
+
+table {
+    margin: 0 auto;
+    color: black;
+    background-color: #FFF;
+
+    border-color: #000;
+    
+    tr:nth-child(2n) {
+        background-color: #CFF;
+    }
+}
+
+table, th, td {
+    border: 1px solid black;
+  border-collapse: collapse;
+}
