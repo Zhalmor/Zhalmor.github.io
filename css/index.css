@@ -2,10 +2,10 @@
 
     /* PC View */
 
-    #homeGridContainer0 {
+    #homeGridContainer1 {
         grid-template-areas:
-            'homeGrid00 homeGrid01'
-            'homeGrid02 homeGrid03';
+            'homeGrid1_1 homeGrid1_2'
+            'homeGrid1_3 homeGrid1_4';
     }
 }
 
@@ -13,12 +13,12 @@
 
     /* Mobile View */
 
-    #homeGridContainer0 {
+    #homeGridContainer1 {
         grid-template-areas:
-            'homeGrid00'
-            'homeGrid01'
-            'homeGrid02'
-            'homeGrid03';
+            'homeGrid1_1'
+            'homeGrid1_2'
+            'homeGrid1_3'
+            'homeGrid1_4';
     }
 }
 
@@ -80,3 +80,11 @@
 }
 
 /* -------------------- */
+
+#homeNoSidePadding{
+    padding: 0rem 0rem;
+}
+
+#homeGridContainer1{
+    padding: 0rem 1rem;
+}
