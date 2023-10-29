@@ -64,6 +64,7 @@ body {
 
     color: #fff;
     background: #16181C;
+    box-sizing: border-box;
 }
 
 #topHeader {
@@ -97,6 +98,8 @@ main>section>* {
 }
 
 #bottomFooter {
+    box-sizing: border-box;
+    
     display: flex;
     text-align: center;
 
@@ -154,10 +157,14 @@ figure figcaption {
 /*---------------------------------------------*/
 /* Containers & Content */
 
-.grid-container {
+.textGridContainer {
     display: grid;
     gap: 2em 2em;
     padding: 1rem 0rem;
+}
+
+.figureGridContainer {
+    display: grid;
 }
 
 .gridElement {}
@@ -260,7 +267,7 @@ figure figcaption {
     width: fit-content;
     padding: 1rem;
     background-color: #9100ff;
-    display: none;
+    display: flex;
     flex-direction: column;
     left: 100%;
     top: 100%;
