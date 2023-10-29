@@ -1,0 +1,21 @@
+@media (min-width: 769px) {
+
+    /* PC View */
+
+    #parametersGridContainer1, #parametersGridContainer2, #parametersGridContainer3 {
+        grid-template-areas:
+            'parametersGrid1_1 parametersGrid1_2 parametersGrid1_3 parametersGrid1_4';
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    /* Mobile View */
+
+    #parametersGridContainer1, #parametersGridContainer2, #parametersGridContainer3 {
+        grid-template-areas:
+            'parametersGrid1_1 parametersGrid1_3'
+            'parametersGrid1_2 parametersGrid1_4';
+    }
+}

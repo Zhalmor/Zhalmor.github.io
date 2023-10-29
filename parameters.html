@@ -9,7 +9,7 @@
     <link rel="icon" type="image/css" href="./img/Logo/favicon.svg">
 
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/parameters.css">
     <script src="./js/script.js"></script>
 </head>
 
@@ -49,6 +49,139 @@
         </a>
     </nav>
     <main>
+        <section>
+            <h1>Parameters</h1>
+            <p>Een vreselijk overversimpelde uitleg over hoe AI afbeeldingen gegeneerd worden, is dat de woorden die de
+                gebruiker invoert een bepaalde matrix aan gewichten meedragen die werden bepaald tijdens het
+                trainingproces van het model, dit heeft het model weer bepaald vanwege de ingevoerde datasets.De
+                gebruiker kan bijvoorbeeld als input 'dog' kunnen invoeren, hier zal het model de gegeven data als het
+                waren “proberen op te lossen” door een extreem complex proces dat de gegeven gewichten zal vergelijken
+                met de dataset waarop het getraind is.</p>
+            <p>Verder zijn er veel meer soorten toevoegingen waar we gebruik van kunnen maken, die uiteindelijk invloed
+                hebben op hoe de data geïnterpreteerd word tijdens verschillende stappen in het generatieproces. In dit
+                deel zullen we het hebben over de parameters waar je gebruik van kan maken.</p>
+            <figure>
+                <img src="./img/3parameters/3_1_1.png" alt="Screenshot of the stable-diffusion-webui github repository">
+                <figcaption>Screenshot stable-diffusion-webui</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Sampling method</h2>
+            <p>Een sampling method (ook wel bemonsteringsmethode genoemd) is de manier waarop ruis toegevoegd,
+                verwijdert & opgelost wordt. (Elke generatie hieronder gebruikt DreamShaper8 & deelt exact dezelfde
+                parameters, instellingen, prompt(Fox) & seed. Behalve bemonsteringsmethode)</p>
+
+            <header id="parametersGridContainer1" class="grid-container">
+                <figure id="parametersGrid1_1" class="frontCaption">
+                    <img src="./img/3parameters/3_2_1.png"
+                        alt="AI generated image of a fox">
+                    <figcaption>DPM++ 3M SDE</figcaption>
+                </figure>
+                <figure id="parametersGrid1_2" class="frontCaption">
+                    <img src="./img/3parameters/3_2_2.png"
+                        alt="AI generated image of a fox">
+                    <figcaption>Euler A</figcaption>
+                </figure>
+                <figure id="parametersGrid1_3" class="frontCaption">
+                    <img src="./img/3parameters/3_2_3.png"
+                        alt="AI generated image of a fox">
+                    <figcaption>LMS Karras</figcaption>
+                </figure>
+                <figure id="parametersGrid1_4" class="frontCaption">
+                    <img src="./img/3parameters/3_2_4.png"
+                        alt="AI generated image of a fox">
+                    <figcaption>DPM++ 2M SDE Karass</figcaption>
+                </figure>
+            </header>
+        </section>
+
+        <section>
+            <h2>Sampling steps</h2>
+            <p>Sampling steps (of bemonstering stappen) zijn het aantal iteraties in ruis toevoeging, verwijdering &
+                uitwerking.Het kiezen van het aantal stappen is voor elk onderwerp en model anders wegens het te kort
+                bij lage waardes en overcompensatie bij hoge waardes.De meeste mensen maken gebruik van 30 stappen, maar
+                dit verschilt per model, bemonsteringmethode, prompt ect.(Elke generatie hieronder gebruikt DreamShaper8
+                & deelt exact dezelfde parameters, instellingen, prompt(Fox) & seed. Behalve bemonstering stappen)</p>
+                <header id="parametersGridContainer2" class="grid-container">
+                    <figure id="parametersGrid1_1" class="frontCaption">
+                        <img src="./img/3parameters/3_3_1.png"
+                            alt="AI generated image of a fox">
+                        <figcaption>Steps: 10</figcaption>
+                    </figure>
+                    <figure id="parametersGrid1_2" class="frontCaption">
+                        <img src="./img/3parameters/3_2_2.png"
+                            alt="AI generated image of a fox">
+                        <figcaption>Steps: 30</figcaption>
+                    </figure>
+                    <figure id="parametersGrid1_3" class="frontCaption">
+                        <img src="./img/3parameters/3_3_2.png"
+                            alt="AI generated image of a fox">
+                        <figcaption>Steps: 75</figcaption>
+                    </figure>
+                    <figure id="parametersGrid1_4" class="frontCaption">
+                        <img src="./img/3parameters/3_3_3.png"
+                            alt="AI generated image of a fox">
+                        <figcaption>Steps: 150</figcaption>
+                    </figure>
+                </header>
+        </section>
+
+        <section>
+            <h2>Formaat (width x height)</h2>
+            <p>De grootte van de afbeelding in pixels. Iets waar rekening mee gehouden moet worden is dat modellen
+                verschillen in optimale generatieformaat. Zo zijn de meeste modellen gebaseerd op het formaat 512x512,
+                terwijl nieuwere modellen zoals SDXL afbeeldingen kunnen genereren met het formaat 1024x1024.
+                Afbeeldingen kunnen wel in grotere formaten gegenereerd worden zoals 512x768 of 768x768, maar het zou zo
+                maar eens kunnen dat de logica van je prompt dan breekt, maar dit verschilt heel erg.</p>
+        </section>
+
+        <section>
+            <h2>Batch count & size</h2>
+            <ul>
+                <li>Batch Count is het aantal generatie iteraties.</li>
+                <li>Batch Size is het aantal afbeeldingen dat je tegelijkertijd wilt produceren.</li>
+            </ul>
+
+        </section>
+
+        <section>
+            <h2>CFG Scale</h2>
+            <p>CFG staat voor Classifier Free Guidance Scale. Het houd in hoe sterk de afbeelding moet voldoen aan de
+                prompt, met lagere waardes dus minder streng dan hogere waardes. Lagere waardes worden vaker gebruikt
+                dan hogere waardes, aangezien in hogere waardes veel artefacten aanwezig zijn, 7 word standaard
+                gekozen.(Elke generatie hieronder gebruikt DreamShaper8 & deelt exact dezelfde parameters, instellingen,
+                prompt(Fox) & seed. Behalve CFG Scale)</p>
+                <header id="parametersGridContainer3" class="grid-container">
+                    <figure id="parametersGrid1_1" class="frontCaption">
+                        <img src="./img/3parameters/3_4_1.png"
+                            alt="AI generated image of a fox">
+                        <figcaption>CFG: 1</figcaption>
+                    </figure>
+                    <figure id="parametersGrid1_2" class="frontCaption">
+                        <img src="./img/3parameters/3_2_2.png"
+                            alt="AI generated image of a fox">
+                        <figcaption>CFG: 7</figcaption>
+                    </figure>
+                    <figure id="parametersGrid1_3" class="frontCaption">
+                        <img src="./img/3parameters/3_4_2.png"
+                            alt="AI generated image of a fox">
+                        <figcaption>CFG: 14</figcaption>
+                    </figure>
+                    <figure id="parametersGrid1_4" class="frontCaption">
+                        <img src="./img/3parameters/3_4_3.png"
+                            alt="AI generated image of a fox">
+                        <figcaption>CFG: 30</figcaption>
+                    </figure>
+                </header>
+        </section>
+
+        <section>
+            <h2>Seed</h2>
+            <p>De seed bepalen alle willekeurige aspecten die naar boven komen bij het genereren van een afbeelding,
+                daarom zal je met dezelfde prompt en seed constant hetzelfde resultaat krijgen. Als je voor de seed '-1'
+                kiest, dan zal de seed willekeurig gekozen worden, zodat je elke keer een uniek resultaat krijgt.</p>
+        </section>
 
     </main>
     <footer id="bottomFooter">

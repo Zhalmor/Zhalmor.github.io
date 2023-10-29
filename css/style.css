@@ -126,16 +126,6 @@ a {
     color: #b293ff
 }
 
-h2 {
-    text-align: left;
-    gap: 20rem;
-}
-
-h2 {
-    text-align: center;
-    gap: 20rem;
-}
-
 button {
     transition-duration: 0.4s;
     cursor: pointer;
@@ -159,7 +149,6 @@ figure figcaption {
     text-align: center;
     font-style: italic;
     color: #aaaaaa;
-    margin: 0 auto 1rem auto;
 }
 
 /*---------------------------------------------*/
@@ -182,18 +171,6 @@ figure figcaption {
 /*---------------------------------------------*/
 /* Images */
 
-.aiExample figure figcaption {
-    position: absolute;
-    bottom: 10px;
-    left: 1px;
-    right: 1px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #FFFFFF;
-    padding: 5px;
-    text-align: center;
-    z-index: 9997;
-}
-
 .icon {
     height: 3rem;
 }
@@ -203,6 +180,26 @@ figure figcaption {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin: auto;
+}
+
+
+.frontCaption {
+    position: relative;
+}
+
+.frontCaption figcaption {
+    position: absolute;
+    bottom: 2.5%;
+    left: 0;
+    right: 0;
+    background-color: #00000099;
+    color: #fff;
+    padding: 0.25rem;
+    
+    z-index: 9997;
+
+    font-style: normal;
+    font-weight: bold;
 }
 
 /*---------------------------------------------*/
