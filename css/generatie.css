@@ -66,9 +66,10 @@ table {
 
     border-color: #000;
     
-    tr:nth-child(2n) {
-        background-color: #CFF;
-    }
+    
+}
+tr:nth-child(2n) {
+    background-color: #CFF;
 }
 
 table, th, td {
