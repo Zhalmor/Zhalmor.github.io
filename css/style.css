@@ -9,12 +9,13 @@
 }
 
 @media (min-width: 769px) {
+
     /* PC View */
     .mobile-only {
         display: none;
     }
 
-    main{
+    main {
         padding: 1rem 1rem;
     }
 
@@ -28,12 +29,13 @@
 }
 
 @media (max-width: 768px) {
+
     /* Mobile View */
     .pc-only {
         display: none;
     }
 
-    main{
+    main {
         padding: 0.5rem 0.5rem;
     }
 
@@ -84,15 +86,15 @@ main {
     margin: 4rem auto 1rem auto;
 }
 
-main > section {
-        margin-bottom: 4rem;
+main>section {
+    margin-bottom: 4rem;
+}
 
-        > * {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 1rem;
-        }
-    }
+main>section>* {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
 
 #bottomFooter {
     display: flex;
@@ -139,15 +141,17 @@ button {
     cursor: pointer;
 }
 
-figure{
-    max-width: 100%; /* Ensure the figure doesn't exceed the viewport width */
-    margin: 0; /* Remove default margin */
+figure {
+    max-width: 100%;
+    /* Ensure the figure doesn't exceed the viewport width */
+    margin: 0;
+    /* Remove default margin */
     width: auto;
 }
 
-figure img{
+figure img {
     max-width: 100%;
-    display: block; 
+    display: block;
     margin: 0.0rem auto;
 }
 
