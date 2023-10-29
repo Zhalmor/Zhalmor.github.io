@@ -51,58 +51,63 @@
     <main>
         <section>
             <h1>Generatie</h1>
-            <h2>Gewichten</h2>
-            <p>Je kan het gewicht van delen van je prompt benadrukken door gebruik te maken van haakjes/parentheses of
-                vierkante haakjes/square brackets.
-            </p>
-            <p class="noTextGap">() Haakjes zorgen voor een hogere benadrukking door het gewicht te vermenigvuldigen met
-                1,1.
-            </p>
-            <p class="noTextGap">[] Vierkante haakjes zorgen voor een lagere benadrukking door het gewicht te delen door
-                1,1.
-            </p>
-            <p>: Ook kan je gebruik maken van een dubbelepunt om de nadruk zelf te bepalen ipv. haakjes te herhalen.
-            </p>
+            <section>
+                <h2>Gewichten</h2>
+                <p>Je kan het gewicht van delen van je prompt benadrukken door gebruik te maken van haakjes/parentheses
+                    of
+                    vierkante haakjes/square brackets.
+                </p>
+                <p class="noTextGap">() Haakjes zorgen voor een hogere benadrukking door het gewicht te vermenigvuldigen
+                    met
+                    1,1.
+                </p>
+                <p class="noTextGap">[] Vierkante haakjes zorgen voor een lagere benadrukking door het gewicht te delen
+                    door
+                    1,1.
+                </p>
+                <p>: Ook kan je gebruik maken van een dubbelepunt om de nadruk zelf te bepalen ipv. haakjes te herhalen.
+                </p>
 
-            <p class="noTextGap">De prompt met 6x haakjes:Lion wearing ((((((jeweled crown))))))</p>
-            <p class="noTextGap">Is dus hetzelfde als:</p>
-            <p>1 * 1,1^6 = (jeweled crown:1.772)</p>
+                <p class="noTextGap">De prompt met 6x haakjes:Lion wearing ((((((jeweled crown))))))</p>
+                <p class="noTextGap">Is dus hetzelfde als:</p>
+                <p>1 * 1,1^6 = (jeweled crown:1.772)</p>
 
-            <p class="noTextGap">De prompt met 6x vierkante haakjes: Lion wearing [[[[[[jeweled crown]]]]]]</p>
-            <p class="noTextGap">Is dus hetzelfde als:</p>
-            <p>1 / 1,1^6 = (jeweled crown:0.565)</p>
+                <p class="noTextGap">De prompt met 6x vierkante haakjes: Lion wearing [[[[[[jeweled crown]]]]]]</p>
+                <p class="noTextGap">Is dus hetzelfde als:</p>
+                <p>1 / 1,1^6 = (jeweled crown:0.565)</p>
 
-            <p>Elke generatie hieronder gebruikt DreamShaper8 & deelt exact dezelfde parameters, instellingen, prompt &
-                seed. (Behalve de benadrukking die gegeven word)</p>
+                <p>Elke generatie hieronder gebruikt DreamShaper8 & deelt exact dezelfde parameters, instellingen,
+                    prompt &
+                    seed. (Behalve de benadrukking die gegeven word)</p>
 
 
-            <figure class="frontCaption">
-                <img src="./img/4generatie/4_1_1.png" alt="AI generated image of a fox">
-                <figcaption>jeweled crown | 1.000</figcaption>
-            </figure>
-            <p id="lionExtraCaption">Referentie afbeelding: Lion wearing jeweled crown</p>
-
-            <header id="generatieGridContainer1" class="figureGridContainer">
                 <figure class="frontCaption">
-                    <img src="./img/4generatie/4_1_2.png" alt="AI generated image of a lion wearing crown">
-                    <figcaption>[[[[[[jeweled crown]]]]]] | (:0.565)</figcaption>
+                    <img src="./img/4generatie/4_1_1.png" alt="AI generated image of a fox">
+                    <figcaption>jeweled crown | 1.000</figcaption>
                 </figure>
-                <figure class="frontCaption">
-                    <img src="./img/4generatie/4_1_3.png" alt="AI generated image of a lion wearing crown">
-                    <figcaption>[[[jeweled crown]]] | (:0.751)</figcaption>
-                </figure>
-                <figure class="frontCaption">
-                    <img src="./img/4generatie/4_1_4.png" alt="AI generated image of a lion wearing crown">
-                    <figcaption>(((jeweled crown))) | (:1.331)</figcaption>
-                </figure>
-                <figure class="frontCaption">
-                    <img src="./img/4generatie/4_1_5.png" alt="AI generated image of a lion wearing crown">
-                    <figcaption>((((((jeweled crown)))))) | (:1.772)</figcaption>
-                </figure>
-            </header>
-        </section>
-        <section>
-            <h2>Prompts mengen</h2>
+                <p id="lionExtraCaption">Referentie afbeelding: Lion wearing jeweled crown</p>
+
+                <header id="generatieGridContainer1" class="figureGridContainer">
+                    <figure class="frontCaption">
+                        <img src="./img/4generatie/4_1_2.png" alt="AI generated image of a lion wearing crown">
+                        <figcaption>[[[[[[jeweled crown]]]]]] | (:0.565)</figcaption>
+                    </figure>
+                    <figure class="frontCaption">
+                        <img src="./img/4generatie/4_1_3.png" alt="AI generated image of a lion wearing crown">
+                        <figcaption>[[[jeweled crown]]] | (:0.751)</figcaption>
+                    </figure>
+                    <figure class="frontCaption">
+                        <img src="./img/4generatie/4_1_4.png" alt="AI generated image of a lion wearing crown">
+                        <figcaption>(((jeweled crown))) | (:1.331)</figcaption>
+                    </figure>
+                    <figure class="frontCaption">
+                        <img src="./img/4generatie/4_1_5.png" alt="AI generated image of a lion wearing crown">
+                        <figcaption>((((((jeweled crown)))))) | (:1.772)</figcaption>
+                    </figure>
+                </header>
+            </section>
+            <section>
+                <h2>Prompts mengen</h2>
             <p>Je kan meerdere keywords combineren door gebruik te maken van deze syntax: [keyword1: keyword 2: factor]
                 Hier bepaal je de waarde met een factorwaarde tussen de 0.0 en 1.0. Dit bepaald de benadrukking op de
                 gewichten van de 2 keywords. Met 1.0 de hoogste waarde van keyword1 en 0.0 de hoogste waarde van
@@ -138,6 +143,7 @@
                     <figcaption>portrait of [cat: dog: 0.0]</figcaption>
                 </figure>
             </header>
+            </section>
         </section>
 
         <section>
@@ -239,40 +245,41 @@
 
                 <header id="generatieGridContainer7" class="figureGridContainer">
                     <figure class="frontCaption">
-                        <img src="./img/4generatie/4_7_1.png" alt="AI generated image of a closeup of a bust of person wearing futuristic helmet">
+                        <img src="./img/4generatie/4_7_1.png"
+                            alt="AI generated image of a closeup of a bust of person wearing futuristic helmet">
                         <figcaption>Orginele foto</figcaption>
                     </figure>
                     <figure class="frontCaption">
-                        <img src="./img/4generatie/4_7_2.png" alt="AI generated image of closeup of person wearing futuristic helmet">
+                        <img src="./img/4generatie/4_7_2.png"
+                            alt="AI generated image of closeup of person wearing futuristic helmet">
                         <figcaption>img2img resultaat</figcaption>
                     </figure>
                 </header>
             </section>
+        </section>
+        <section>
+            <h1>Upscaling</h1>
+            <p class="noTextGap">Upscaling is een techniek om de beeld kwaliteit van een bestaande afbeelding te
+                vergroten. In het
+                geval van Stable Diffusion is het zo dat upscaling het best gedaan kan worden voor:
+            </p>
+            <p class="noTextGap"> 1: Afbeeldingen met weinig ruis/patronen/kleuren (Zie voorbeelden hieronder)</p>
+            <p> 2: Afbeelding die al een hoge beeldkwaliteit hebben.</p>
 
-            <section>
-                <h1>Upscaling</h1>
-                <p class="noTextGap">Upscaling is een techniek om de beeld kwaliteit van een bestaande afbeelding te
-                    vergroten. In het
-                    geval van Stable Diffusion is het zo dat upscaling het best gedaan kan worden voor:
-                </p>
-                <p class="noTextGap"> 1: Afbeeldingen met weinig ruis/patronen/kleuren (Zie voorbeelden hieronder)</p>
-                <p> 2: Afbeelding die al een hoge beeldkwaliteit hebben.</p>
-
-                <header id="generatieGridContainer8" class="figureGridContainer">
-                    <figure class="frontCaption">
-                        <img src="./img/4generatie/4_8_1.png" alt="Black and white photo of Abraham Lincoln">
-                        <figcaption>Orgineel (Verlaagde) resolutie 128x128</figcaption>
-                    </figure>
-                    <figure class="frontCaption">
-                        <img src="./img/4generatie/4_8_2.png" alt="Black and white photo of Abraham Lincoln">
-                        <figcaption>Orgineel 512x512</figcaption>
-                    </figure>
-                    <figure class="frontCaption">
-                        <img src="./img/4generatie/4_8_3.png" alt="Black and white photo of Abraham Lincoln">
-                        <figcaption>Upscaled (van 128x128 afbeelding) 512x512</figcaption>
-                    </figure>
-                </header>
-            </section>
+            <header id="generatieGridContainer8" class="figureGridContainer">
+                <figure class="frontCaption">
+                    <img src="./img/4generatie/4_8_1.png" alt="Black and white photo of Abraham Lincoln">
+                    <figcaption>Orgineel (Verlaagde) resolutie 128x128</figcaption>
+                </figure>
+                <figure class="frontCaption">
+                    <img src="./img/4generatie/4_8_2.png" alt="Black and white photo of Abraham Lincoln">
+                    <figcaption>Orgineel 512x512</figcaption>
+                </figure>
+                <figure class="frontCaption">
+                    <img src="./img/4generatie/4_8_3.png" alt="Black and white photo of Abraham Lincoln">
+                    <figcaption>Upscaled (van 128x128 afbeelding) 512x512</figcaption>
+                </figure>
+            </header>
         </section>
     </main>
     <footer id="bottomFooter">
