@@ -36,12 +36,12 @@ function cycleBanner() {
     // Makes the homebanner image on the homescreen background
     // cycle between a folder of images
 
-    let rngNew = Math.floor(Math.random() * 7);
+    let rngNew = Math.floor(Math.random() * 7) + 1;
 
     // If the random number being picked is not the same as the last picked image
     if (rngNew != rngOld) {
         // Sets the homeBanner image to the new image and then wait 5 seconds to cycle again
-        document.getElementById("homeBannerImage").src = "../img/Page-Home/BannerCycle/" + rngNew + ".png";
+        document.getElementById("homeBannerImage").src = "../img/1home/1_1_" + rngNew + ".png";
         rngOld = rngNew;
         setTimeout(cycleBanner, 5000);
     }
