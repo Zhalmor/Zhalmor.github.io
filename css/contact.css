@@ -15,3 +15,9 @@
 #contactForm * {
     margin: 0rem;
 }
+input{
+    height: 2rem;
+    border-style: solid;
+    border-color: #b293ff;
+    border-width: 2px;
+}

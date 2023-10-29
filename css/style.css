@@ -116,6 +116,10 @@ main>* {
 .bottomFooterSection {
     flex-direction: column;
     flex: 1;
+
+    > *{
+        font-family: "stefRoboto_Mono";
+    }
 }
 
 .bottomFooterH2 {
