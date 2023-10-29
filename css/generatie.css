@@ -1,0 +1,62 @@
+#lionExtraCaption {
+    text-align: center;
+    font-style: italic;
+    color: #aaaaaa;
+}
+
+
+
+@media (min-width: 769px) {
+    /* PC View */
+    /* Ik weet dat hier een betere manier voor is, maar ik moest rekening houden met dat de meeste elementen al classes hadden
+    En ik moet rekening met de deadline houden*/
+
+    #generatieGridContainer1 {
+        grid-template-areas:
+            '1 2 3 4';
+    }
+
+    #generatieGridContainer2 {
+        grid-template-areas:
+            '1 2 3'
+            '4 5 6';
+    }
+
+    #generatieGridContainer8 {
+        grid-template-areas:
+            '1 2 3';
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile View */
+
+    #generatieGridContainer1 {
+        grid-template-areas:
+            '1 2'
+            '3 4';
+    }
+
+    #generatieGridContainer2 {
+        grid-template-areas:
+            '1 2'
+            '3 4'
+            '5 6';
+    }
+
+    #generatieGridContainer8 {
+        grid-template-areas:
+            '1'
+            '2'
+            '3';
+    }
+}
+
+#generatieGridContainer3,
+#generatieGridContainer4,
+#generatieGridContainer5,
+#generatieGridContainer6,
+#generatieGridContainer7 {
+    grid-template-areas:
+        '1 2';
+}

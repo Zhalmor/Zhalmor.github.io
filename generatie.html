@@ -9,7 +9,7 @@
     <link rel="icon" type="image/css" href="./img/Logo/favicon.svg">
 
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/generatie.css">
     <script src="./js/script.js"></script>
 </head>
 
@@ -55,20 +55,51 @@
             <p>Je kan het gewicht van delen van je prompt benadrukken door gebruik te maken van haakjes/parentheses of
                 vierkante haakjes/square brackets.
             </p>
-            <p>() Haakjes zorgen voor een hogere benadrukking door het gewicht te vermenigvuldigen met 1,1.
+            <p class="noTextGap">() Haakjes zorgen voor een hogere benadrukking door het gewicht te vermenigvuldigen met
+                1,1.
             </p>
-            <p>[] Vierkante haakjes zorgen voor een lagere benadrukking door het gewicht te delen door 1,1.
+            <p class="noTextGap">[] Vierkante haakjes zorgen voor een lagere benadrukking door het gewicht te delen door
+                1,1.
             </p>
             <p>: Ook kan je gebruik maken van een dubbelepunt om de nadruk zelf te bepalen ipv. haakjes te herhalen.
             </p>
 
-            <p>De prompt met 6x haakjes:Lion wearing ((((((jeweled crown))))))</p>
-            <p>Is dus hetzelfde als:</p>
+            <p class="noTextGap">De prompt met 6x haakjes:Lion wearing ((((((jeweled crown))))))</p>
+            <p class="noTextGap">Is dus hetzelfde als:</p>
             <p>1 * 1,1^6 = (jeweled crown:1.772)</p>
 
-            <p>De prompt met 6x vierkante haakjes: Lion wearing [[[[[[jeweled crown]]]]]]</p>
-            <p>Is dus hetzelfde als:</p>
+            <p class="noTextGap">De prompt met 6x vierkante haakjes: Lion wearing [[[[[[jeweled crown]]]]]]</p>
+            <p class="noTextGap">Is dus hetzelfde als:</p>
             <p>1 / 1,1^6 = (jeweled crown:0.565)</p>
+
+            <p>Elke generatie hieronder gebruikt DreamShaper8 & deelt exact dezelfde parameters, instellingen, prompt &
+                seed. (Behalve de benadrukking die gegeven word)</p>
+
+
+            <figure class="frontCaption">
+                <img src="./img/4generatie/4_1_1.png" alt="AI generated image of a fox">
+                <figcaption>jeweled crown | 1.000</figcaption>
+            </figure>
+            <p id="lionExtraCaption">Referentie afbeelding: Lion wearing jeweled crown</p>
+
+            <header id="generatieGridContainer1" class="figureGridContainer">
+                <figure class="frontCaption">
+                    <img src="./img/4generatie/4_1_2.png" alt="AI generated image of a lion wearing crown">
+                    <figcaption>[[[[[[jeweled crown]]]]]] | (:0.565)</figcaption>
+                </figure>
+                <figure class="frontCaption">
+                    <img src="./img/4generatie/4_1_3.png" alt="AI generated image of a lion wearing crown">
+                    <figcaption>[[[jeweled crown]]] | (:0.751)</figcaption>
+                </figure>
+                <figure class="frontCaption">
+                    <img src="./img/4generatie/4_1_4.png" alt="AI generated image of a lion wearing crown">
+                    <figcaption>(((jeweled crown))) | (:1.331)</figcaption>
+                </figure>
+                <figure class="frontCaption">
+                    <img src="./img/4generatie/4_1_5.png" alt="AI generated image of a lion wearing crown">
+                    <figcaption>((((((jeweled crown)))))) | (:1.772)</figcaption>
+                </figure>
+            </header>
         </section>
         <section>
             <h2>Prompts mengen</h2>
@@ -80,6 +111,33 @@
                 niet.
                 Elke generatie hieronder gebruikt DreamShaper8 & deelt exact dezelfde parameters, instellingen, prompt &
                 seed. (Behalve de factor in de prompt menging)</p>
+
+            <header id="generatieGridContainer2" class="figureGridContainer">
+                <figure class="frontCaption">
+                    <img src="./img/4generatie/4_2_1.png" alt="AI generated image of a cat">
+                    <figcaption>portrait of [cat: dog: 1.0]</figcaption>
+                </figure>
+                <figure class="frontCaption">
+                    <img src="./img/4generatie/4_2_2.png" alt="AI generated image of a cat">
+                    <figcaption>portrait of [cat: dog: 0.8]</figcaption>
+                </figure>
+                <figure class="frontCaption">
+                    <img src="./img/4generatie/4_2_3.png" alt="AI generated image of a dog mixed with a cat">
+                    <figcaption>portrait of [cat: dog: 0.6]</figcaption>
+                </figure>
+                <figure class="frontCaption">
+                    <img src="./img/4generatie/4_2_4.png" alt="AI generated image of a dog mixed with a cat">
+                    <figcaption>portrait of [cat: dog: 0.4]</figcaption>
+                </figure>
+                <figure class="frontCaption">
+                    <img src="./img/4generatie/4_2_5.png" alt="AI generated image of a dog">
+                    <figcaption>portrait of [cat: dog: 0.2]</figcaption>
+                </figure>
+                <figure class="frontCaption">
+                    <img src="./img/4generatie/4_2_6.png" alt="AI generated image of a dog">
+                    <figcaption>portrait of [cat: dog: 0.0]</figcaption>
+                </figure>
+            </header>
         </section>
 
         <section>
@@ -95,28 +153,74 @@
                 <p>Met het gebruik van bijvoorbeeld een houten anatomie pop of een papieren sketch kan je best simpel
                     poses,
                     contouren & schaal aangeven voor het model om na te bootsen.</p>
-                <p> Positive Prompts: Wizard in robes holding staff</p>
-                <p> Model: DreamShaper 8</p>
+                <p class="noTextGap"> Positive Prompts: Wizard in robes holding staff</p>
+                <p class="noTextGap"> Model: DreamShaper 8</p>
                 <p> Denoising Strength: 0.7</p>
+                <header id="generatieGridContainer3" class="figureGridContainer">
+                    <figure class="frontCaption">
+                        <img src="./img/4generatie/4_3_1.jpg" alt="Photo of small wooden mannequin pointing">
+                        <figcaption>Orginele foto</figcaption>
+                    </figure>
+                    <figure class="frontCaption">
+                        <img src="./img/4generatie/4_3_2.jpg" alt="AI generated image of wizard holding a staff">
+                        <figcaption>img2img resultaat</figcaption>
+                    </figure>
+                </header>
 
-                <p> Positive Prompts: Wizard in robes sitting at edge of building, cyberpunk, future</p>
-                <p> Negative Prompts: blurred, bad quality, low quality, bad face, low quality face, bad hands,
+                <p class="noTextGap"> Positive Prompts: Wizard in robes sitting at edge of building, cyberpunk, future
+                </p>
+                <p class="noTextGap"> Negative Prompts: blurred, bad quality, low quality, bad face, low quality face,
+                    bad hands,
                     easynegative, EasyNegativeV2</p>
-                <p> Model: DreamShaper 8</p>
+                <p class="noTextGap"> Model: DreamShaper 8</p>
                 <p> Denoising Strength: 0.7</p>
+                <header id="generatieGridContainer4" class="figureGridContainer">
+                    <figure class="frontCaption">
+                        <img src="./img/4generatie/4_4_1.png" alt="Photo of small wooden mannequin sitting">
+                        <figcaption>Orginele foto</figcaption>
+                    </figure>
+                    <figure class="frontCaption">
+                        <img src="./img/4generatie/4_4_2.png"
+                            alt="AI generated image of cyberpunk wizard sitting on building ledge">
+                        <figcaption>img2img resultaat</figcaption>
+                    </figure>
+                </header>
 
-                <p> Positive Prompts: Giant robot walking through city</p>
-                <p> Model: DreamShaper 8</p>
-                <p> Denoising Strength: 0.6</p>
+                <p class="noTextGap"> Positive Prompts: Giant robot walking through city</p>
+                <p class="noTextGap"> Model: DreamShaper 8</p>
+                <p> Denoising Strength: 0.7</p>
+                <header id="generatieGridContainer5" class="figureGridContainer">
+                    <figure class="frontCaption">
+                        <img src="./img/4generatie/4_5_1.png" alt="Photo of small wooden mannequin standing">
+                        <figcaption>Orginele foto</figcaption>
+                    </figure>
+                    <figure class="frontCaption">
+                        <img src="./img/4generatie/4_5_2.png" alt="AI generated image of robot standing in city street">
+                        <figcaption>img2img resultaat</figcaption>
+                    </figure>
+                </header>
             </section>
 
             <section>
                 <h2>Inpainting</h2>
                 <p>Inpainting is het aangeven van specifieke plekken binnen een afbeelding die verandert moeten worden.
                 </p>
-                <p>Positive Prompt: huge tophat on statue head</p>
-                <p>Model: DreamShaper 8</p>
+                <p class="noTextGap">Positive Prompt: huge tophat on statue head</p>
+                <p class="noTextGap">Model: DreamShaper 8</p>
                 <p>Denoising Strength 1: 0.7</p>
+
+                <header id="generatieGridContainer6" class="figureGridContainer">
+                    <figure class="frontCaption">
+                        <img src="./img/4generatie/4_6_1.png"
+                            alt="AI generated image stylized model of a bronze bust of man">
+                        <figcaption>Orginele foto</figcaption>
+                    </figure>
+                    <figure class="frontCaption">
+                        <img src="./img/4generatie/4_6_2.png"
+                            alt="AI generated image stylized model of a bronze bust of man wearing a black tophat">
+                        <figcaption>img2img resultaat</figcaption>
+                    </figure>
+                </header>
             </section>
 
             <section>
@@ -126,21 +230,48 @@
                     wilt zien. Met deze beter gestemde resultaten kan je weer verder gaan om een nog specifieker gewenst
                     resultaat te bereiken.
                 </p>
-                <p>Text2Img Positive Prompts: warframe tenno, solo, by Frederick Hammersley</p>
-                <p> Negative Prompts: group, duo, trio, human, skin</p>
-                <p>Model: DreamShaper 8</p>
-                <p>Img2img prompts: red accents, gold accents, black, shoulders, facing sideways</p>
+                <p class="noTextGap">Text2Img Positive Prompts: warframe tenno, solo, by Frederick Hammersley</p>
+                <p class="noTextGap"> Negative Prompts: group, duo, trio, human, skin</p>
+                <p class="fakeEnter">Model: DreamShaper 8</p>
+
+                <p class="noTextGap">Img2img prompts: red accents, gold accents, black, shoulders, facing sideways</p>
                 <p>Denoising Strength: 0.7</p>
+
+                <header id="generatieGridContainer7" class="figureGridContainer">
+                    <figure class="frontCaption">
+                        <img src="./img/4generatie/4_7_1.png" alt="AI generated image of a closeup of a bust of person wearing futuristic helmet">
+                        <figcaption>Orginele foto</figcaption>
+                    </figure>
+                    <figure class="frontCaption">
+                        <img src="./img/4generatie/4_7_2.png" alt="AI generated image of closeup of person wearing futuristic helmet">
+                        <figcaption>img2img resultaat</figcaption>
+                    </figure>
+                </header>
             </section>
 
             <section>
                 <h1>Upscaling</h1>
-                <p>Upscaling is een techniek om de beeld kwaliteit van een bestaande afbeelding te vergroten. In het
+                <p class="noTextGap">Upscaling is een techniek om de beeld kwaliteit van een bestaande afbeelding te
+                    vergroten. In het
                     geval van Stable Diffusion is het zo dat upscaling het best gedaan kan worden voor:
                 </p>
-                <p> 1: Afbeeldingen met weinig ruis/patronen/kleuren (Zie voorbeelden hieronder)</p>
+                <p class="noTextGap"> 1: Afbeeldingen met weinig ruis/patronen/kleuren (Zie voorbeelden hieronder)</p>
                 <p> 2: Afbeelding die al een hoge beeldkwaliteit hebben.</p>
 
+                <header id="generatieGridContainer8" class="figureGridContainer">
+                    <figure class="frontCaption">
+                        <img src="./img/4generatie/4_8_1.png" alt="Black and white photo of Abraham Lincoln">
+                        <figcaption>Orgineel (Verlaagde) resolutie 128x128</figcaption>
+                    </figure>
+                    <figure class="frontCaption">
+                        <img src="./img/4generatie/4_8_2.png" alt="Black and white photo of Abraham Lincoln">
+                        <figcaption>Orgineel 512x512</figcaption>
+                    </figure>
+                    <figure class="frontCaption">
+                        <img src="./img/4generatie/4_8_3.png" alt="Black and white photo of Abraham Lincoln">
+                        <figcaption>Upscaled (van 128x128 afbeelding) 512x512</figcaption>
+                    </figure>
+                </header>
             </section>
         </section>
     </main>
@@ -169,11 +300,11 @@
         </section>
     </footer>
 
-    <section id="cookiePopup">
+    <aside id="cookiePopup">
         <h2>This is a fake cookie message</h2>
         <button id="cookieButtonAccept" class="cookieButtons">Accept</button>
         <button id="cookieButtonDecline" class="cookieButtons">Reject</button>
-    </section>
+    </aside>
 </body>
 
 </html>
