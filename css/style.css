@@ -82,23 +82,13 @@ main {
 
     margin: 4rem auto 1rem auto;
 
-    >section {
+    > section {
         margin-bottom: 4rem;
 
-        >* {
+        > * {
             display: flex;
             flex-direction: column;
             margin-bottom: 1rem;
-        }
-    }
-
-    >.noGap {
-        > h1{
-            margin-bottom: 1rem;
-        }
-
-        >* {
-            margin-bottom: 0rem;
         }
     }
 }
