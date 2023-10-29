@@ -51,17 +51,21 @@
     <main>
         <section>
             <h1>Checkpoints</h1>
-            <p>Het woord ‘model’ is binnen de Stable Diffusion gemeenschap een overkoepelende term voor alle methoden
+            <p>Het woord 'model' is binnen de Stable Diffusion gemeenschap een overkoepelende term voor alle methoden
                 die direct of indirect invloed hebben op het AI generatieproces. Er zijn veel soorten modellen, maar de
-                meest belangrijke zijn Checkpoints & LoRA’s. De checkpoint staat ook bekend als Model of Diffusion
-                Model, het bestaat uit gewichten die grootschalig getraind zijn op specifieke datasets, waardoor ze
+                meest belangrijke zijn <strong>Checkpoints & LoRA's</strong>. De <strong>checkpoint</strong> staat ook
+                bekend als <strong>Model</strong> of <strong>Diffusion
+                    Model</strong>, het bestaat uit gewichten die grootschalig getraind zijn op specifieke datasets,
+                waardoor ze
                 afbeeldingen in bepaalde stijlen/formaten/interpretatie kunnen genereren en begrijpen. De checkpoint is
                 ook het generatieproces waar andere modellen van getraind worden. De checkpoint modellen kunnen zo klein
-                zijn als 2GB zoals bij DreamShaper, of zo groot als 6.5GB SDXL. Afbeeldingen worden meestal in de
+                zijn als 2GB zoals bij <a href="https://civitai.com/models/4384?modelVersionId=128713"
+                target="_blank">DreamShaper 8</a>, of zo groot als 6.5GB SDXL. Afbeeldingen worden meestal in de
                 formaten 512x512 & 768x768 gegenereerd, maar kunnen met bijvoorbeeld de SDXL modellen in 1024x1024
                 gegenereerd worden.</p>
             <p>Het meest afgeleide model is SD 1.5 (Stable Diffusion 1.5), dit wilt zeggen dat dit het model is waar de
-                meeste andere modellen van getraind zijn, DreamShaper is hier ook van getraind.</p>
+                meeste andere modellen van getraind zijn, <a href="https://civitai.com/models/4384?modelVersionId=128713"
+                target="_blank">DreamShaper 8</a> is hier ook van getraind.</p>
 
             <figure id="modellenCheckpointExample">
                 <img src="./img/5modellen/5_1_1.png" alt="Screenshot of the stable-diffusion-webui github repository">
@@ -71,21 +75,21 @@
 
         <section>
             <h1>LoRA's</h1>
-            <p>Een LoRA (Low-Rank Adaptation) is een op checkpoint getrainde adaptatie, dat tijdens het
+            <p>Een <strong>LoRA (Low-Rank Adaptation)</strong> is een op checkpoint getrainde adaptatie, dat tijdens het
                 prompt-naar-afbeelding proces veranderingen toebrengt aan het generatieproces door extra lagen aan
                 gewichten toe te brengen tussen de checkpoint zijn gewichtlagen. Dit stuurt als het ware de output meer
-                richting naar wat de LoRA toevoegde tijdens het generatieproces. Hierdoor kunnen er ook meerdere LoRA’s
-                tegelijkertijd toegevoegd worden. LoRA’s bevatten alleen de specifiek getrainde data, hierdoor zijn ze
+                richting naar wat de LoRA toevoegde tijdens het generatieproces. Hierdoor kunnen er ook meerdere LoRA's
+                tegelijkertijd toegevoegd worden. LoRA's bevatten alleen de specifiek getrainde data, hierdoor zijn ze
                 klein in bestandsgrootte.</p>
             <p class="fakeEnter">In dit voorbeeld is de invloed van een LoRA te zien dat getrained is op de acteur
                 Giancarlo Esposito:Elke
-                generatie hieronder gebruikt realistic-vision-v20 (Oud vervallen model) & deelt exact dezelfde
+                generatie hieronder gebruikt <strong>realistic-vision-v20 (Oud vervallen model)</strong> & deelt exact dezelfde
                 parameters, instellingen, prompt & seed. (Behalve voor de LoRA dat wordt gebruikt)</p>
 
-            <p>Positive Prompts: Closeup of Giancarlo Esposito in tuxedo, realistic, analog style, modelshoot,
+            <p><strong>Positive Prompts:</strong> Closeup of Giancarlo Esposito in tuxedo, realistic, analog style, modelshoot,
                 hyperdetailed, realistic eyes, brown eyes, matte skin, soft shadows, dim lighting, realistic lighting
             </p>
-            <p>Negative Prompts: bad eyes, blue eyes, green eyes</p>
+            <p><strong>Negative Prompts:</strong> bad eyes, blue eyes, green eyes</p>
 
             <header id="modellenGridContainer1" class="figureGridContainer">
                 <figure class="frontCaption">
@@ -109,9 +113,9 @@
                 <li><a href="https://civitai.com/">https://civitai.com/</a>
                 </li>
             </ul>
-            <p>Om de modellen te gebruiken moet je navigeren naar de folder waarin je Stable Diffusion hebt opgeslagen,
-                ga vervolgens naar de folder 'Models' en plaats voor checkpoints het in de Stable Diffusion folder, en
-                voor LoRA's in de LoRA folder.</p>
+            <p>Om de modellen te gebruiken moet je navigeren naar de folder waarin je <strong>Stable Diffusion</strong> hebt opgeslagen,
+                ga vervolgens naar de folder <strong>'Models'</strong> en plaats voor checkpoints het in de <strong>Stable Diffusion folder</strong>, en
+                voor LoRA's in de <strong>LoRA folder</strong>.</p>
             <p>Binnen de webui kan je gebruik maken van checkpoints door linksboven bij de 'Stable Diffusion checkpoint'
                 selectieknop te kiezen welk checkpoint je wilt gebruiken.Voor LoRA's kan je een LoRA knop vinden in de
                 balk onder de prompt velden. Hier kan je ze toevoegen door te klikken welk je wilt, en vervolgens kan je
@@ -133,7 +137,8 @@
             <h2 class="bottomFooterH2">Opdracht</h2>
             <a href="https://github.com/Zhalmor/Zhalmor.github.io"><img class="icon" src="./img/github-mark-white.svg"
                     alt="Logo icon of Github"></a>
-            <p>&copy;2023 | Webdesign Project ‘Diffusion Basics’ <a href="https://www.inholland.nl/">@InHolland</a>
+            <p>&copy;2023 | Webdesign Project 'Diffusion Basics' <a href="https://www.inholland.nl/"
+                    target=”_blank”>@InHolland</a>
             </p>
         </section>
 

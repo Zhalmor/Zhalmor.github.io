@@ -175,6 +175,7 @@ button {
     display: grid;
     gap: 0.5rem;
     justify-content: center;
+    padding: 0rem 0rem 2.5rem 0rem;
 }
 
 /*---------------------------------------------*/
@@ -222,7 +223,7 @@ figure figcaption {
     max-width: 18.75rem;
     left: 0;
     right: 0;
-    background-color: #00000099;
+    background-color: #000000bb;
     color: #fff;
     padding: 0.25rem;
 
@@ -323,10 +324,10 @@ figure figcaption {
 /* Inline text colors */
 
 .textGreen {
-    color: #008800;;
+    color: #00ff00;;
 }
 .textRed {
-    color: #EE0000;;
+    color: #ff0000;;
 }
 .textPurple{
     color: #b293ff;
