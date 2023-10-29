@@ -1,0 +1,23 @@
+#modellenCheckpointExample{
+    max-width: 50rem;
+}
+
+@media (min-width: 769px) {
+    /* PC View */
+
+    #modellenGridContainer1 {
+        grid-template-areas:
+            '1 2 3';
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile View */
+
+    #modellenGridContainer1 {
+        grid-template-areas:
+            '1'
+            '2'
+            '3';
+    }
+}

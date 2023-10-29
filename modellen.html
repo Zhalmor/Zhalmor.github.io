@@ -9,7 +9,7 @@
     <link rel="icon" type="image/css" href="./img/Logo/favicon.svg">
 
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/modellen.css">
     <script src="./js/script.js"></script>
 </head>
 
@@ -49,7 +49,74 @@
         </a>
     </nav>
     <main>
+        <section>
+            <h1>Checkpoints</h1>
+            <p>Het woord ‘model’ is binnen de Stable Diffusion gemeenschap een overkoepelende term voor alle methoden
+                die direct of indirect invloed hebben op het AI generatieproces. Er zijn veel soorten modellen, maar de
+                meest belangrijke zijn Checkpoints & LoRA’s. De checkpoint staat ook bekend als Model of Diffusion
+                Model, het bestaat uit gewichten die grootschalig getraind zijn op specifieke datasets, waardoor ze
+                afbeeldingen in bepaalde stijlen/formaten/interpretatie kunnen genereren en begrijpen. De checkpoint is
+                ook het generatieproces waar andere modellen van getraind worden. De checkpoint modellen kunnen zo klein
+                zijn als 2GB zoals bij DreamShaper, of zo groot als 6.5GB SDXL. Afbeeldingen worden meestal in de
+                formaten 512x512 & 768x768 gegenereerd, maar kunnen met bijvoorbeeld de SDXL modellen in 1024x1024
+                gegenereerd worden.</p>
+            <p>Het meest afgeleide model is SD 1.5 (Stable Diffusion 1.5), dit wilt zeggen dat dit het model is waar de
+                meeste andere modellen van getraind zijn, DreamShaper is hier ook van getraind.</p>
 
+            <figure id="modellenCheckpointExample">
+                <img src="./img/5modellen/5_1_1.png" alt="Screenshot of the stable-diffusion-webui github repository">
+                <figcaption>Versimpeld overzicht van het checkpoint training & generatie proces</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h1>LoRA's</h1>
+            <p>Een LoRA (Low-Rank Adaptation) is een op checkpoint getrainde adaptatie, dat tijdens het
+                prompt-naar-afbeelding proces veranderingen toebrengt aan het generatieproces door extra lagen aan
+                gewichten toe te brengen tussen de checkpoint zijn gewichtlagen. Dit stuurt als het ware de output meer
+                richting naar wat de LoRA toevoegde tijdens het generatieproces. Hierdoor kunnen er ook meerdere LoRA’s
+                tegelijkertijd toegevoegd worden. LoRA’s bevatten alleen de specifiek getrainde data, hierdoor zijn ze
+                klein in bestandsgrootte.</p>
+            <p class="fakeEnter">In dit voorbeeld is de invloed van een LoRA te zien dat getrained is op de acteur
+                Giancarlo Esposito:Elke
+                generatie hieronder gebruikt realistic-vision-v20 (Oud vervallen model) & deelt exact dezelfde
+                parameters, instellingen, prompt & seed. (Behalve voor de LoRA dat wordt gebruikt)</p>
+
+            <p>Positive Prompts: Closeup of Giancarlo Esposito in tuxedo, realistic, analog style, modelshoot,
+                hyperdetailed, realistic eyes, brown eyes, matte skin, soft shadows, dim lighting, realistic lighting
+            </p>
+            <p>Negative Prompts: bad eyes, blue eyes, green eyes</p>
+
+            <header id="modellenGridContainer1" class="figureGridContainer">
+                <figure class="frontCaption">
+                    <img src="./img/5modellen/5_2_1.png" alt="Closeup photo of Giancarlo Esposito">
+                    <figcaption>Echte foto</figcaption>
+                </figure>
+                <figure class="frontCaption">
+                    <img src="./img/5modellen/5_2_2.png" alt="AI generated image of closeup of a man wearing a tuxedo">
+                    <figcaption>Zonder LoRA</figcaption>
+                </figure>
+                <figure class="frontCaption">
+                    <img src="./img/5modellen/5_2_3.png" alt="AI generated image of closeup of Giancarlo Esposito">
+                    <figcaption>Met LoRA</figcaption>
+                </figure>
+            </header>
+            <p class="noTextGap">Modellen en LoRA's kunnen hier gedownload worden.</p>
+            <ul class="fakeEnter">
+                <li><a
+                        href="https://huggingface.co/models?pipeline_tag=text-to-image&sort=trending">https://huggingface.co</a>
+                </li>
+                <li><a href="https://civitai.com/">https://civitai.com/</a>
+                </li>
+            </ul>
+            <p>Om de modellen te gebruiken moet je navigeren naar de folder waarin je Stable Diffusion hebt opgeslagen,
+                ga vervolgens naar de folder 'Models' en plaats voor checkpoints het in de Stable Diffusion folder, en
+                voor LoRA's in de LoRA folder.</p>
+            <p>Binnen de webui kan je gebruik maken van checkpoints door linksboven bij de 'Stable Diffusion checkpoint'
+                selectieknop te kiezen welk checkpoint je wilt gebruiken.Voor LoRA's kan je een LoRA knop vinden in de
+                balk onder de prompt velden. Hier kan je ze toevoegen door te klikken welk je wilt, en vervolgens kan je
+                ook de gewicht impact van de LoRA aanpassen door het getal achteraan te verhogen of verlagen.</p>
+        </section>
     </main>
     <footer id="bottomFooter">
         <section id="bottomFooterLeft" class="bottomFooterSection">

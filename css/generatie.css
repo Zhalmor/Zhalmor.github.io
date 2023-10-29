@@ -8,8 +8,6 @@
 
 @media (min-width: 769px) {
     /* PC View */
-    /* Ik weet dat hier een betere manier voor is, maar ik moest rekening houden met dat de meeste elementen al classes hadden
-    En ik moet rekening met de deadline houden*/
 
     #generatieGridContainer1 {
         grid-template-areas:
