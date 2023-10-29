@@ -2,9 +2,17 @@
 
     /* PC View */
 
-    #parametersGridContainer1, #parametersGridContainer2, #parametersGridContainer3 {
+    #parametersGridContainer1 {
         grid-template-areas:
             'parametersGrid1_1 parametersGrid1_2 parametersGrid1_3 parametersGrid1_4';
+    }
+    #parametersGridContainer2 {
+        grid-template-areas:
+            'parametersGrid2_1 parametersGrid2_2 parametersGrid2_3 parametersGrid2_4';
+    }
+    #parametersGridContainer3 {
+        grid-template-areas:
+            'parametersGrid3_1 parametersGrid3_2 parametersGrid3_3 parametersGrid3_4';
     }
 
 }
@@ -13,9 +21,19 @@
 
     /* Mobile View */
 
-    #parametersGridContainer1, #parametersGridContainer2, #parametersGridContainer3 {
+    #parametersGridContainer1 {
         grid-template-areas:
             'parametersGrid1_1 parametersGrid1_3'
             'parametersGrid1_2 parametersGrid1_4';
+    }
+    #parametersGridContainer2 {
+        grid-template-areas:
+            'parametersGrid2_1 parametersGrid2_3'
+            'parametersGrid2_2 parametersGrid2_4';
+    }
+    #parametersGridContainer3 {
+        grid-template-areas:
+            'parametersGrid3_1 parametersGrid3_3'
+            'parametersGrid3_2 parametersGrid3_4';
     }
 }

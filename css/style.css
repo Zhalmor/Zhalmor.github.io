@@ -260,7 +260,7 @@ figure figcaption {
     width: fit-content;
     padding: 1rem;
     background-color: #9100ff;
-    display: flex;
+    display: none;
     flex-direction: column;
     left: 100%;
     top: 100%;
