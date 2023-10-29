@@ -10,7 +10,7 @@
 
 @media (min-width: 769px) {
 
-   
+
 
     /* PC View */
     .mobile-only {
@@ -28,7 +28,7 @@
 
 @media (max-width: 768px) {
 
-    
+
 
     /* Mobile View */
     .pc-only {
@@ -81,9 +81,27 @@ main {
     flex: 1;
 
     margin: 4rem auto 1rem auto;
-    background-color: #008800;
-}
 
+    >* {
+        margin-bottom: 4rem;
+
+        >* {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+        }
+    }
+
+    >.noGap {
+        > h1{
+            margin-bottom: 1rem;
+        }
+
+        >* {
+            margin-bottom: 0rem;
+        }
+    }
+}
 
 #bottomFooter {
     display: flex;
@@ -103,7 +121,7 @@ main {
     flex: 1;
 }
 
-.bottomFooterH2{
+.bottomFooterH2 {
     font-weight: normal;
 }
 
@@ -139,11 +157,9 @@ button {
     padding: 1rem 0rem;
 }
 
-.gridElement {
+.gridElement {}
 
-}
-
-.textBox{
+.textBox {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -164,7 +180,7 @@ button {
     z-index: 9997;
 }
 
-.icon{
+.icon {
     height: 3rem;
 }
 

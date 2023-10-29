@@ -50,7 +50,96 @@
     </nav>
 
     <main>
-        <h1>Installatie</h1>
+        <section>
+            <h1>Installatie</h1>
+            <section>
+                <h4>1. Downloaden GIT</h4>
+                <p>Git is een versiebeheersysteem, dat wij zullen gebruiken om de User Interface en bijbebehorende
+                    extensies
+                    te downloaden en te updaten.Tijdens de <a href="https://git-scm.com/downloads"> Git installatie </a>
+                    kan
+                    je alles standaard laten zoals het staat. Je
+                    zou de master-branch kunnen veranderen van naam naar main, deze naamgeving word vaker gebruikt dan
+                    master, maar speelt in deze handleiding geen rol.</p>
+            </section>
+            <section>
+                <h4>2. Downloaden Python 3.10.6</h4>
+                <p>Python is een programmeertaal dat veel gebruikt word bij onder ander het maken van A.I. applicaties,
+                    waarond Stable Diffusion. Hiervoor downloaden we het dus ook.Vergeet niet tijdens de <a
+                        href="https://www.python.org/downloads/release/python-3106/">Python Installatie</a>
+                    (die je onderaan de pagina kan vinden)om 'Add python.exe to PATH' aan te vinken, dit maakt het voor
+                    andere applicaties makkelijker om Python te vinden. Nieuwere versies zoals 3.12 zouden problemen
+                    kunnen
+                    hebben met Stable Diffusion te runnen, daarom downloaden we voor de zekerheid 3.10.</p>
+            </section>
+            <section>
+                <h4>3. Kopieëren stable-diffusion-webui Github link</h4>
+                <p>We gaan iets downloaden genaamd <a
+                        href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">stable-diffusion-webui</a>, dit
+                    is de
+                    User Interface waarmee je kan
+                    interacteren met de generatie modellen.Klik op de link hierboven en klik vervolgens op de groene
+                    '&lt;&gt;
+                    Code' knop, kopieer vervolgens de HTTPS link op het scherm (kijk screenshot).</p>
+            </section>
+            <section>
+                <h4>4. webui klonen</h4>
+                <p>Navigeer naar een lege folder waar je stable-diffusion-webui wilt downloaden, type vervolgens in de
+                    adresbalk boven aan `cmd`, dit opent commandprompt. Type in deze commandprompt `git clone [DE HTTPS
+                    LINK]` (Kijk screenshot), dit download de webui op je apparaat met de bijbehorende folders en code.
+                    Druk
+                    op 'Enter' en de download zal beginnen, dit kan even duren.</p>
+            </section>
+            <section>
+                <h4>5. Batch bestand aanpassen</h4>
+                <p>Wacht totdat de download klaar is en navigeer vervolgens in de folder naar het bestand genaamd
+                    `webui-user.bat`, dit is het bestand dat ervoor zorgt dat je de webui kan gebruiken. Klik met de
+                    rechtermuisknop op dit bestand en klik vervolgends op `edit`/`bewerken`, voeg vervolgens de volgende
+                    2
+                    dingen toe:1. Ga naar de locatie waar je Python hebt gedownload, dit kan je doen door het met de
+                    windowstoets/commandtoets hiernaar te zoeken en vervolgens het pad uit de adresbalk to kopieëren.
+                    Plak
+                    dit vervolgens achter `set PYTHON=` zoals te zien is in het voorbeeld hieronder.2. Voeg voor `call
+                    webui.bat` de zin `git pull` toe. Dit zorgt ervoor dat wanneer je Stable Diffusion wilt gebruiken,
+                    er
+                    automatisch geupdate word naar wat nieuw is.</p>
+            </section>
+            <section>
+                <h4>6. Downloaden modellen</h4>
+                <p>Het zou zo kunnen zijn dat in de folder 'models/Stable-Diffusion', het model SD v1.5 al gedownload
+                    is.
+                    Dit is een oud maar populair Base Model waarvan veel andere modellen getraind zijn. Momenteel zijn
+                    er
+                    modernere en beter getrainde modellen beschikbaar.Volg deze link naar <a
+                        href="https://civitai.com/models/4384?modelVersionId=128713">CivitAi</a> en download hier
+                    vervolgens de nieuwste versie van het Dreamshaper model. Dit is een populair model dat actief word
+                    bijgehouden met vernieuwde versies en is in het algemeen beter getraind dan SD1.5.</p>
+            </section>
+            <section>
+                <h4>7. Opstarten stable-diffusion-webui</h4>
+                <p>Start de webui door webui-user.bat' op te starten, dit kan even duren aangezien er veel extra
+                    gedownload
+                    moet worden. Zodra 'webui-user.bat' runt kan je in je browser met het webadres <a
+                        href="http://127.0.0.1:7860/">http://127.0.0.1:7860/</a>
+                    gebruik maken van Stable Diffusion, dit opent al uit zichzelf na de download.</p>
+            </section>
+        </section>
+
+        <section class="noGap">
+            <h1>Klaar met deze stappen?</h1>
+            <p>Gefeliciteerd! Stable Diffusion is nu lokaal geïnstalleerd op je computer. Wil je meer komen te weten
+                over
+                hoe
+                je het meeste uit SD kan halen</p>
+            <p>of</p>
+            <p>Heb je vragen/feedback over de site/Stable Diffusion? Ga dan naar een van de volgende links hieronder, of
+                doe
+                dit via het navigatiemenu linksboven:</p>
+            <a href="./parameters.html">Parameters</a>
+            <a href="./generatie.html">Generatie</a>
+            <a href="./modellen.html">Modellen</a>
+            <a href="./contact.html">Contact</a>
+        </section>
     </main>
 
     <footer id="bottomFooter">
