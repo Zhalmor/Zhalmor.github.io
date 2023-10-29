@@ -18,33 +18,39 @@
         <button id="navDropdownButton" onclick="dropdownMenu()">
         </button>
         <a id="logo" href="https://zhalmor.github.io/"><img class="icon" src="./img/Logo/logo_Color_White.svg"
-                alt="Logo of Diffusion Basics"></a>
+                title="Logo of Diffusion Basics (To home)" alt="Logo of Diffusion Basics"></a>
     </header>
     <nav id="navPopout">
         <a href="index.html" class="navLinks">
-            <img class="navPageIcon" src="./img/Nav/Page1_Home.svg" alt="Simplistic UI icon of home">
+            <img class="navPageIcon" src="./img/Nav/Page1_Home.svg" alt="Simplistic UI icon of home"
+                title="Simplistic UI icon of home">
             Home
         </a>
         <a href="installatie.html" class="navLinks">
-            <img class="navPageIcon" src="./img/Nav/Page2_Installatie.svg" alt="Simplistic UI icon of donwload button">
+            <img class="navPageIcon" src="./img/Nav/Page2_Installatie.svg" alt="Simplistic UI icon of donwload button"
+                title="Simplistic UI icon of donwload button">
             Installatie
         </a>
         <a href="parameters.html" id="navActivePage" class="navLinks">
             <img class="navPageIcon" src="./img/Nav/Page3_Parameters.svg"
-                alt="Simplistic UI icon of computer code parameters">
+                alt="Simplistic UI icon of computer code parameters"
+                title="Simplistic UI icon of computer code parameters">
             Parameters
         </a>
         <a href="generatie.html" class="navLinks">
-            <img class="navPageIcon" src="./img/Nav/Page4_Generatie.svg" alt="Simplistic UI icon of cpu">
+            <img class="navPageIcon" src="./img/Nav/Page4_Generatie.svg" alt="Simplistic UI icon of cpu"
+                title="Simplistic UI icon of cpu">
             Generatie
         </a>
         <a href="modellen.html" class="navLinks">
-            <img class="navPageIcon" src="./img/Nav/Page5_Modellen.svg" alt="Simplistic UI icon of adding layers">
+            <img class="navPageIcon" src="./img/Nav/Page5_Modellen.svg" alt="Simplistic UI icon of adding layers"
+                title="Simplistic UI icon of adding layers">
             Modellen
         </a>
         <a href="contact.html" class="navLinks">
 
-            <img class="navPageIcon" src="./img/Nav/Page6_Contact.svg" alt="Simplistic UI icon of square speech bubble">
+            <img class="navPageIcon" src="./img/Nav/Page6_Contact.svg" alt="Simplistic UI icon of square speech bubble"
+                title="Simplistic UI icon of square speech bubble">
             Contact
         </a>
     </nav>
@@ -54,21 +60,24 @@
             <p>Een vreselijk overversimpelde uitleg over hoe AI afbeeldingen gegeneerd worden, is dat de woorden die de
                 gebruiker invoert een bepaalde matrix aan gewichten meedragen die werden bepaald tijdens het
                 trainingproces van het model, dit heeft het model weer bepaald vanwege de ingevoerde datasets. De
-                gebruiker kan bijvoorbeeld als input <strong>&lsquo;dog&rsquo;</strong> kunnen invoeren, hier zal het model de
+                gebruiker kan bijvoorbeeld als input <strong>&lsquo;dog&rsquo;</strong> kunnen invoeren, hier zal het
+                model de
                 gegeven data als het
-                waren <strong>&ldquo;proberen op te lossen&rdquo;</strong> door een extreem complex proces dat de gegeven gewichten
+                waren <strong>&ldquo;proberen op te lossen&rdquo;</strong> door een extreem complex proces dat de
+                gegeven gewichten
                 zal vergelijken
                 met de dataset waarop het getraind is.</p>
             <p>Verder zijn er veel meer soorten toevoegingen waar we gebruik van kunnen maken, die uiteindelijk invloed
                 hebben op hoe de data geïnterpreteerd word tijdens verschillende stappen in het generatieproces. In dit
                 deel zullen we het hebben over de parameters waar je gebruik van kan maken.</p>
             <figure>
-                <img src="./img/3parameters/3_1_1.png" alt="Screenshot of the stable-diffusion-webui github repository">
+                <img src="./img/3parameters/3_1_1.png" alt="Screenshot of the stable-diffusion-webui"
+                    title="Screenshot of the stable-diffusion-webui">
                 <figcaption>Screenshot stable-diffusion-webui</figcaption>
             </figure>
         </section>
 
-        <section>
+        <article>
             <h2>Sampling method</h2>
             <p>Een sampling method (ook wel bemonsteringsmethode genoemd) is de manier waarop ruis toegevoegd,
                 verwijdert &amp; opgelost wordt. (Elke generatie hieronder gebruikt <a
@@ -78,71 +87,80 @@
 
             <header id="parametersGridContainer1" class="figureGridContainer">
                 <figure class="frontCaption">
-                    <img src="./img/3parameters/3_2_1.png" alt="AI generated image of a fox">
+                    <img src="./img/3parameters/3_2_1.png" alt="AI generated image of a fox"
+                        title="AI generated image of a fox">
                     <figcaption>DPM++ 3M SDE</figcaption>
                 </figure>
                 <figure class="frontCaption">
-                    <img src="./img/3parameters/3_2_2.png" alt="AI generated image of a fox">
+                    <img src="./img/3parameters/3_2_2.png" alt="AI generated image of a fox"
+                        title="AI generated image of a fox">
                     <figcaption>Euler A</figcaption>
                 </figure>
                 <figure class="frontCaption">
-                    <img src="./img/3parameters/3_2_3.png" alt="AI generated image of a fox">
+                    <img src="./img/3parameters/3_2_3.png" alt="AI generated image of a fox"
+                        title="AI generated image of a fox">
                     <figcaption>LMS Karras</figcaption>
                 </figure>
                 <figure class="frontCaption">
-                    <img src="./img/3parameters/3_2_4.png" alt="AI generated image of a fox">
+                    <img src="./img/3parameters/3_2_4.png" alt="AI generated image of a fox"
+                        title="AI generated image of a fox">
                     <figcaption>DPM++ 2M SDE Karass</figcaption>
                 </figure>
             </header>
-        </section>
+        </article>
 
-        <section>
+        <article>
             <h2>Sampling steps</h2>
             <p>Sampling steps (of bemonstering stappen) zijn het aantal iteraties in ruis toevoeging, verwijdering &amp;
                 uitwerking.Het kiezen van het aantal stappen is voor elk onderwerp en model anders wegens het te kort
                 bij lage waardes en overcompensatie bij hoge waardes.De meeste mensen maken gebruik van 30 stappen, maar
                 dit verschilt per model, bemonsteringmethode, prompt ect.(Elke generatie hieronder gebruikt <a
                     href="https://civitai.com/models/4384?modelVersionId=128713" target="_blank">DreamShaper8</a>
-                    &amp; deelt exact dezelfde parameters, instellingen, prompt(Fox) &amp; seed. Behalve bemonstering stappen)</p>
+                &amp; deelt exact dezelfde parameters, instellingen, prompt(Fox) &amp; seed. Behalve bemonstering
+                stappen)</p>
             <header id="parametersGridContainer2" class="figureGridContainer">
                 <figure class="frontCaption">
-                    <img src="./img/3parameters/3_3_1.png" alt="AI generated image of a fox">
+                    <img src="./img/3parameters/3_3_1.png" alt="AI generated image of a fox"
+                        title="AI generated image of a fox">
                     <figcaption>Steps: 10</figcaption>
                 </figure>
                 <figure class="frontCaption">
-                    <img src="./img/3parameters/3_2_2.png" alt="AI generated image of a fox">
+                    <img src="./img/3parameters/3_2_2.png" alt="AI generated image of a fox"
+                        title="AI generated image of a fox">
                     <figcaption>Steps: 30</figcaption>
                 </figure>
                 <figure class="frontCaption">
-                    <img src="./img/3parameters/3_3_2.png" alt="AI generated image of a fox">
+                    <img src="./img/3parameters/3_3_2.png" alt="AI generated image of a fox"
+                        title="AI generated image of a fox">
                     <figcaption>Steps: 75</figcaption>
                 </figure>
                 <figure class="frontCaption">
-                    <img src="./img/3parameters/3_3_3.png" alt="AI generated image of a fox">
+                    <img src="./img/3parameters/3_3_3.png" alt="AI generated image of a fox"
+                        title="AI generated image of a fox">
                     <figcaption>Steps: 150</figcaption>
                 </figure>
             </header>
-        </section>
+        </article>
 
-        <section>
+        <article>
             <h2>Formaat (width x height)</h2>
             <p>De grootte van de afbeelding in pixels. Iets waar rekening mee gehouden moet worden is dat modellen
                 verschillen in optimale generatieformaat. Zo zijn de meeste modellen gebaseerd op het formaat 512x512,
                 terwijl nieuwere modellen zoals SDXL afbeeldingen kunnen genereren met het formaat 1024x1024.
                 Afbeeldingen kunnen wel in grotere formaten gegenereerd worden zoals 512x768 of 768x768, maar het zou zo
                 maar eens kunnen dat de logica van je prompt dan breekt, maar dit verschilt heel erg.</p>
-        </section>
+        </article>
 
-        <section>
+        <article>
             <h2>Batch count &amp; size</h2>
             <ul>
                 <li>Batch Count is het aantal generatie iteraties.</li>
                 <li>Batch Size is het aantal afbeeldingen dat je tegelijkertijd wilt produceren.</li>
             </ul>
 
-        </section>
+        </article>
 
-        <section>
+        <article>
             <h2>CFG Scale</h2>
             <p>CFG staat voor Classifier Free Guidance Scale. Het houd in hoe sterk de afbeelding moet voldoen aan de
                 prompt, met lagere waardes dus minder streng dan hogere waardes. Lagere waardes worden vaker gebruikt
@@ -153,30 +171,35 @@
                 prompt(Fox) &amp; seed. Behalve CFG Scale)</p>
             <header id="parametersGridContainer3" class="figureGridContainer">
                 <figure class="frontCaption">
-                    <img src="./img/3parameters/3_4_1.png" alt="AI generated image of a fox">
+                    <img src="./img/3parameters/3_4_1.png" alt="AI generated image of a fox"
+                        title="AI generated image of a fox">
                     <figcaption>CFG: 1</figcaption>
                 </figure>
                 <figure class="frontCaption">
-                    <img src="./img/3parameters/3_2_2.png" alt="AI generated image of a fox">
+                    <img src="./img/3parameters/3_2_2.png" alt="AI generated image of a fox"
+                        title="AI generated image of a fox">
                     <figcaption>CFG: 7</figcaption>
                 </figure>
                 <figure class="frontCaption">
-                    <img src="./img/3parameters/3_4_2.png" alt="AI generated image of a fox">
+                    <img src="./img/3parameters/3_4_2.png" alt="AI generated image of a fox"
+                        title="AI generated image of a fox">
                     <figcaption>CFG: 14</figcaption>
                 </figure>
                 <figure class="frontCaption">
-                    <img src="./img/3parameters/3_4_3.png" alt="AI generated image of a fox">
+                    <img src="./img/3parameters/3_4_3.png" alt="AI generated image of a fox"
+                        title="AI generated image of a fox">
                     <figcaption>CFG: 30</figcaption>
                 </figure>
             </header>
-        </section>
+        </article>
 
-        <section>
+        <article>
             <h2>Seed</h2>
             <p>De seed bepalen alle willekeurige aspecten die naar boven komen bij het genereren van een afbeelding,
-                daarom zal je met dezelfde prompt en seed constant hetzelfde resultaat krijgen. Als je voor de seed &lsquo;-1&rsquo;
+                daarom zal je met dezelfde prompt en seed constant hetzelfde resultaat krijgen. Als je voor de seed
+                &lsquo;-1&rsquo;
                 kiest, dan zal de seed willekeurig gekozen worden, zodat je elke keer een uniek resultaat krijgt.</p>
-        </section>
+        </article>
 
     </main>
     <footer id="bottomFooter">
@@ -193,7 +216,7 @@
         <section class="bottomFooterSection">
             <h2 class="bottomFooterH2">Opdracht</h2>
             <a href="https://github.com/Zhalmor/Zhalmor.github.io"><img class="icon" src="./img/github-mark-white.svg"
-                    alt="Logo icon of Github"></a>
+                    title="Logo icon of Github (To github repository)" alt="Logo icon of Github"></a>
             <p>&copy;2023 &#124; Webdesign Project &lsquo;Diffusion Basics&rsquo; <a href="https://www.inholland.nl/"
                     target=”_blank”>&commat;InHolland</a>
             </p>

@@ -63,6 +63,10 @@ body {
 }
 
 body {
+    word-spacing: 0;
+    line-height: normal;
+    letter-spacing: normal;
+
     display: flex;
     flex-direction: column;
 
@@ -143,6 +147,10 @@ h2{
     font-family: "stefRoboto_Mono";
 }
 
+ul{
+    text-indent: 1rem;
+}
+
 .noTextGap {
     margin-bottom: 0;
 }
@@ -156,6 +164,12 @@ a {
     transition-duration: 0.4s;
     color: #b293ff;
 }
+
+a:visited {
+    color: #93aeff;
+}
+
+
 
 button {
     transition-duration: 0.4s;
@@ -207,7 +221,7 @@ figure img {
 figure figcaption {
     text-align: center;
     font-style: italic;
-    color: #aaaaaa;
+    color: #fff;
 }
 
 

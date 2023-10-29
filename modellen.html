@@ -18,58 +18,68 @@
         <button id="navDropdownButton" onclick="dropdownMenu()">
         </button>
         <a id="logo" href="https://zhalmor.github.io/"><img class="icon" src="./img/Logo/logo_Color_White.svg"
-                alt="Logo of Diffusion Basics"></a>
+                title="Logo of Diffusion Basics (To home)" alt="Logo of Diffusion Basics"></a>
     </header>
     <nav id="navPopout">
         <a href="index.html" class="navLinks">
-            <img class="navPageIcon" src="./img/Nav/Page1_Home.svg" alt="Simplistic UI icon of home">
+            <img class="navPageIcon" src="./img/Nav/Page1_Home.svg" alt="Simplistic UI icon of home"
+                title="Simplistic UI icon of home">
             Home
         </a>
         <a href="installatie.html" class="navLinks">
-            <img class="navPageIcon" src="./img/Nav/Page2_Installatie.svg" alt="Simplistic UI icon of donwload button">
+            <img class="navPageIcon" src="./img/Nav/Page2_Installatie.svg" alt="Simplistic UI icon of donwload button"
+                title="Simplistic UI icon of donwload button">
             Installatie
         </a>
         <a href="parameters.html" class="navLinks">
             <img class="navPageIcon" src="./img/Nav/Page3_Parameters.svg"
-                alt="Simplistic UI icon of computer code parameters">
+                alt="Simplistic UI icon of computer code parameters"
+                title="Simplistic UI icon of computer code parameters">
             Parameters
         </a>
         <a href="generatie.html" class="navLinks">
-            <img class="navPageIcon" src="./img/Nav/Page4_Generatie.svg" alt="Simplistic UI icon of cpu">
+            <img class="navPageIcon" src="./img/Nav/Page4_Generatie.svg" alt="Simplistic UI icon of cpu"
+                title="Simplistic UI icon of cpu">
             Generatie
         </a>
         <a href="modellen.html" id="navActivePage" class="navLinks">
-            <img class="navPageIcon" src="./img/Nav/Page5_Modellen.svg" alt="Simplistic UI icon of adding layers">
+            <img class="navPageIcon" src="./img/Nav/Page5_Modellen.svg" alt="Simplistic UI icon of adding layers"
+                title="Simplistic UI icon of adding layers">
             Modellen
         </a>
         <a href="contact.html" class="navLinks">
 
-            <img class="navPageIcon" src="./img/Nav/Page6_Contact.svg" alt="Simplistic UI icon of square speech bubble">
+            <img class="navPageIcon" src="./img/Nav/Page6_Contact.svg" alt="Simplistic UI icon of square speech bubble"
+                title="Simplistic UI icon of square speech bubble">
             Contact
         </a>
     </nav>
     <main>
         <section>
             <h1>Checkpoints</h1>
-            <p>Het woord &lsquo;model&rsquo; is binnen de Stable Diffusion gemeenschap een overkoepelende term voor alle methoden
+            <p>Het woord &lsquo;model&rsquo; is binnen de Stable Diffusion gemeenschap een overkoepelende term voor alle
+                methoden
                 die direct of indirect invloed hebben op het AI generatieproces. Er zijn veel soorten modellen, maar de
-                meest belangrijke zijn <strong>Checkpoints &amp; LoRA&prime;s</strong>. De <strong>checkpoint</strong> staat ook
+                meest belangrijke zijn <strong>Checkpoints &amp; LoRA&prime;s</strong>. De <strong>checkpoint</strong>
+                staat ook
                 bekend als <strong>Model</strong> of <strong>Diffusion
                     Model</strong>, het bestaat uit gewichten die grootschalig getraind zijn op specifieke datasets,
                 waardoor ze
                 afbeeldingen in bepaalde stijlen/formaten/interpretatie kunnen genereren en begrijpen. De checkpoint is
                 ook het generatieproces waar andere modellen van getraind worden. De checkpoint modellen kunnen zo klein
                 zijn als 2GB zoals bij <a href="https://civitai.com/models/4384?modelVersionId=128713"
-                target="_blank">DreamShaper 8</a>, of zo groot als 6.5GB SDXL. Afbeeldingen worden meestal in de
+                    target="_blank">DreamShaper 8</a>, of zo groot als 6.5GB SDXL. Afbeeldingen worden meestal in de
                 formaten 512x512 &amp; 768x768 gegenereerd, maar kunnen met bijvoorbeeld de SDXL modellen in 1024x1024
                 gegenereerd worden.</p>
             <p>Het meest afgeleide model is SD 1.5 (Stable Diffusion 1.5), dit wilt zeggen dat dit het model is waar de
-                meeste andere modellen van getraind zijn, <a href="https://civitai.com/models/4384?modelVersionId=128713"
-                target="_blank">DreamShaper 8</a> is hier ook van getraind.</p>
+                meeste andere modellen van getraind zijn, <a
+                    href="https://civitai.com/models/4384?modelVersionId=128713" target="_blank">DreamShaper 8</a> is
+                hier ook van getraind.</p>
 
             <figure id="modellenCheckpointExample">
-                <img src="./img/5modellen/5_1_1.png" alt="Screenshot of the stable-diffusion-webui github repository">
-                <figcaption>Versimpeld overzicht van het checkpoint training &amp; generatie proces</figcaption>
+                <img src="./img/5modellen/5_1_1.png" alt="Simplified explanation of how a LoRA works"
+                    title="Simplified explanation of how a LoRA works">
+                <figcaption>Versimpeld overzicht van hoe een LoRA werkt</figcaption>
             </figure>
         </section>
 
@@ -78,30 +88,37 @@
             <p>Een <strong>LoRA (Low-Rank Adaptation)</strong> is een op checkpoint getrainde adaptatie, dat tijdens het
                 prompt-naar-afbeelding proces veranderingen toebrengt aan het generatieproces door extra lagen aan
                 gewichten toe te brengen tussen de checkpoint zijn gewichtlagen. Dit stuurt als het ware de output meer
-                richting naar wat de LoRA toevoegde tijdens het generatieproces. Hierdoor kunnen er ook meerdere LoRA&prime;s
-                tegelijkertijd toegevoegd worden. LoRA&prime;s bevatten alleen de specifiek getrainde data, hierdoor zijn ze
+                richting naar wat de LoRA toevoegde tijdens het generatieproces. Hierdoor kunnen er ook meerdere
+                LoRA&prime;s
+                tegelijkertijd toegevoegd worden. LoRA&prime;s bevatten alleen de specifiek getrainde data, hierdoor
+                zijn ze
                 klein in bestandsgrootte.</p>
             <p class="fakeEnter">In dit voorbeeld is de invloed van een LoRA te zien dat getrained is op de acteur
                 Giancarlo Esposito:Elke
-                generatie hieronder gebruikt <strong>realistic-vision-v20 (Oud vervallen model)</strong> &amp; deelt exact dezelfde
+                generatie hieronder gebruikt <strong>realistic-vision-v20 (Oud vervallen model)</strong> &amp; deelt
+                exact dezelfde
                 parameters, instellingen, prompt &amp; seed. (Behalve voor de LoRA dat wordt gebruikt)</p>
 
-            <p><strong>Positive Prompts:</strong> Closeup of Giancarlo Esposito in tuxedo, realistic, analog style, modelshoot,
+            <p><strong>Positive Prompts:</strong> Closeup of Giancarlo Esposito in tuxedo, realistic, analog style,
+                modelshoot,
                 hyperdetailed, realistic eyes, brown eyes, matte skin, soft shadows, dim lighting, realistic lighting
             </p>
             <p><strong>Negative Prompts:</strong> bad eyes, blue eyes, green eyes</p>
 
             <header id="modellenGridContainer1" class="figureGridContainer">
                 <figure class="frontCaption">
-                    <img src="./img/5modellen/5_2_1.png" alt="Closeup photo of Giancarlo Esposito">
+                    <img src="./img/5modellen/5_2_1.png" alt="Closeup photo of Giancarlo Esposito"
+                        title="Closeup photo of Giancarlo Esposito">
                     <figcaption>Echte foto</figcaption>
                 </figure>
                 <figure class="frontCaption">
-                    <img src="./img/5modellen/5_2_2.png" alt="AI generated image of closeup of a man wearing a tuxedo">
+                    <img src="./img/5modellen/5_2_2.png" alt="AI generated image of closeup of a man wearing a tuxedo"
+                        title="AI generated image of closeup of a man wearing a tuxedo">
                     <figcaption>Zonder LoRA</figcaption>
                 </figure>
                 <figure class="frontCaption">
-                    <img src="./img/5modellen/5_2_3.png" alt="AI generated image of closeup of Giancarlo Esposito">
+                    <img src="./img/5modellen/5_2_3.png" alt="AI generated image of closeup of Giancarlo Esposito"
+                        title="AI generated image of closeup of Giancarlo Esposito">
                     <figcaption>Met LoRA</figcaption>
                 </figure>
             </header>
@@ -113,11 +130,16 @@
                 <li><a href="https://civitai.com/">https://civitai.com/</a>
                 </li>
             </ul>
-            <p>Om de modellen te gebruiken moet je navigeren naar de folder waarin je <strong>Stable Diffusion</strong> hebt opgeslagen,
-                ga vervolgens naar de folder <strong>&lsquo;Models&rsquo;</strong> en plaats voor checkpoints het in de <strong>Stable Diffusion folder</strong>, en
-                voor LoRA&prime;s in de <strong>LoRA folder</strong>.</p>
-            <p>Binnen de webui kan je gebruik maken van checkpoints door linksboven bij de &lsquo;Stable Diffusion checkpoint&rsquo;
-                selectieknop te kiezen welk checkpoint je wilt gebruiken.Voor LoRA&prime;s kan je een LoRA knop vinden in de
+            <p>Om de modellen te gebruiken moet je navigeren naar de folder waarin je <strong>Stable Diffusion</strong>
+                hebt opgeslagen,
+                ga vervolgens naar de folder <strong>&lsquo;Models&rsquo;</strong> en plaats voor checkpoints het in de
+                <strong>Stable Diffusion folder</strong>, en
+                voor LoRA&prime;s in de <strong>LoRA folder</strong>.
+            </p>
+            <p>Binnen de webui kan je gebruik maken van checkpoints door linksboven bij de &lsquo;Stable Diffusion
+                checkpoint&rsquo;
+                selectieknop te kiezen welk checkpoint je wilt gebruiken.Voor LoRA&prime;s kan je een LoRA knop vinden
+                in de
                 balk onder de prompt velden. Hier kan je ze toevoegen door te klikken welk je wilt, en vervolgens kan je
                 ook de gewicht impact van de LoRA aanpassen door het getal achteraan te verhogen of verlagen.</p>
         </section>
@@ -136,7 +158,7 @@
         <section class="bottomFooterSection">
             <h2 class="bottomFooterH2">Opdracht</h2>
             <a href="https://github.com/Zhalmor/Zhalmor.github.io"><img class="icon" src="./img/github-mark-white.svg"
-                    alt="Logo icon of Github"></a>
+                    title="Logo icon of Github (To github repository)" alt="Logo icon of Github"></a>
             <p>&copy;2023 &#124; Webdesign Project &lsquo;Diffusion Basics&rsquo; <a href="https://www.inholland.nl/"
                     target=”_blank”>&commat;InHolland</a>
             </p>

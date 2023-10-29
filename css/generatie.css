@@ -72,6 +72,7 @@ tr:nth-child(2n) {
     background-color: #CFF;
 }
 
+
 table, th, td {
     border: 1px solid black;
   border-collapse: collapse;
