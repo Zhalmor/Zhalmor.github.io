@@ -2,15 +2,19 @@
 <html lang="nl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Stef Visser" />
+    <meta name="description" content="Wat er te weten valt over de AI-beeldgenerator Stable Diffusion" />
+    <meta name="keywords"
+        content="Stable Diffusion, AI-beeldgenerator, opensource, stable-diffusion-webui, persoonlijke computer" />
 
-    <title>Diffusion Basics</title>
-    <link rel="icon" type="image/css" href="./img/Logo/favicon.svg">
+    <title>Home | Diffusion Basics</title>
+    <link rel="icon" type="image/x-icon" href="./img/Logo/favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
 
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
-    <script src="./js/script.js"></script>
+    <script defer src="./js/script.js"></script>
 </head>
 
 <body>
@@ -18,7 +22,7 @@
         <button id="navDropdownButton" onclick="dropdownMenu()">
         </button>
         <a id="logo" href="https://zhalmor.github.io/"><img class="icon" src="./img/Logo/logo_Color_White.svg"
-            title="Logo of Diffusion Basics (To home)" alt="Logo of Diffusion Basics"></a>
+                title="Logo of Diffusion Basics (To home)" alt="Logo of Diffusion Basics"></a>
     </header>
     <nav id="navPopout">
         <a href="index.html" id="navActivePage" class="navLinks">
@@ -27,8 +31,8 @@
             Home
         </a>
         <a href="installatie.html" class="navLinks">
-            <img class="navPageIcon" src="./img/Nav/Page2_Installatie.svg" alt="Simplistic UI icon of donwload button"
-                title="Simplistic UI icon of donwload button">
+            <img class="navPageIcon" src="./img/Nav/Page2_Installatie.svg" alt="Simplistic UI icon of download button"
+                title="Simplistic UI icon of download button">
             Installatie
         </a>
         <a href="parameters.html" class="navLinks">
@@ -62,21 +66,18 @@
                     Start Hier
                 </a>
             </section>
-            <img id="homeBannerImage" src="../img/Page-Home/BannerCycle/3.png"
-                alt="AI generated image" title="Banner image of Diffusion Basics homescreen">
+            <img id="homeBannerImage" src="../img/Page-Home/BannerCycle/3.png" alt="AI generated image"
+                title="Banner image of Diffusion Basics homescreen">
         </figure>
 
-
-        <!-- Ik heb in mijn code af en toe de header tag moeten gebruiken als container.
-            Ik heb dit gedaan aangezien ik GEEN DIVS MOET GEBRUIKEN
-            en omdat sections/articles headings MOETEN hebben, anders is er een waarschuwing in de HTML validatie
-        dit was de beste alternatief waar ik op kwam-->
-        <header id="homeGridContainer1" class="textGridContainer">
+        <section id="homeGridContainer1" class="textGridContainer">
             <section id="homeGrid1_1">
                 <h2>Wat is Stable Diffusion?</h2>
-                <p><strong>Stable Diffusion (SD)</strong> is een geavanceerde AI-beeldgenerator dat lokaal gerund kan worden op
+                <p><strong>Stable Diffusion (SD)</strong> is een geavanceerde AI-beeldgenerator dat lokaal gerund kan
+                    worden op
                     persoonlijke computers. Het gene wat SD uniek maakt in vergelijking met zijn competitie zoals;
-                <strong>DALL&middot;E 3</strong> of <strong>Midjourney</strong>, is dat SD opensource is met een bloeiende gemeenschap van
+                    <strong>DALL&middot;E 3</strong> of <strong>Midjourney</strong>, is dat SD opensource is met een
+                    bloeiende gemeenschap van
                     individuelen die implementaties creëren en delen die zijn afgeleid van deze open source-mentaliteit.
                     Zoals:
                 </p>
@@ -97,11 +98,15 @@
                 <h2>Fijn afgestemde modellen</h2>
                 <p>De community werkt samen aan het maken van modellen door bemiddel van het te trainen op datasets van
                     specifieke onderwerpen, stijlen of andere modellen. Hiermee krijgen ze uiteindelijk een accuratere
-                    gegenereerde output voor hun gewenste getrainde input. Deze modellen kunnen <strong>checkpoints</strong> zijn, wat
-                    wilt zeggen dat ze de gewichten, interpetatie &amp; output van het generatieprocess grooschalig bepalen.
+                    gegenereerde output voor hun gewenste getrainde input. Deze modellen kunnen
+                    <strong>checkpoints</strong> zijn, wat
+                    wilt zeggen dat ze de gewichten, interpetatie &amp; output van het generatieprocess grooschalig
+                    bepalen.
                     Maar modellen kunnen ook bestaan uit kleinschaligere implementaties genaamd <strong>LoRA&prime;s
-                    (Low-Ranking-Adaptation)</strong>, die tijdens het generatieprocess extra gewichtlagen toevoegen. Dit soort
-                    model kan samen gebruikt worden met andere LoRA&prime;s, en kan ingesteld worden qua hoeveel invloed ze
+                        (Low-Ranking-Adaptation)</strong>, die tijdens het generatieprocess extra gewichtlagen
+                    toevoegen. Dit soort
+                    model kan samen gebruikt worden met andere LoRA&prime;s, en kan ingesteld worden qua hoeveel invloed
+                    ze
                     hebben op het eindresultaat. Modellen hebben invloed op onder ander:
                 </p>
                 <ul>
@@ -122,7 +127,8 @@
                 </p>
                 <ul>
                     <li>Dreambooth: Makkelijk trainen van modellen</li>
-                    <li>ControlNet: Herkennen en toepassen van afbeelding-dieptemappen, contouren &amp; poses voor het lezen
+                    <li>ControlNet: Herkennen en toepassen van afbeelding-dieptemappen, contouren &amp; poses voor het
+                        lezen
                         en creëren van afbeeldingen.</li>
                 </ul>
             </section>
@@ -132,7 +138,7 @@
                     kan alles simpel geüpdate worden met een simpele pull-request dat geautomatiseerd kan worden.
                 </p>
             </section>
-        </header>
+        </section>
     </main>
     <footer id="bottomFooter">
         <section id="bottomFooterLeft" class="bottomFooterSection">
@@ -148,8 +154,9 @@
         <section class="bottomFooterSection">
             <h2 class="bottomFooterH2">Opdracht</h2>
             <a href="https://github.com/Zhalmor/Zhalmor.github.io"><img class="icon" src="./img/github-mark-white.svg"
-                title="Logo icon of Github (To github repository)" alt="Logo icon of Github"></a>
-            <p>&copy;2023 &#124; Webdesign Project &lsquo;Diffusion Basics&rsquo; <a href="https://www.inholland.nl/" target=”_blank”>&commat;InHolland</a>
+                    title="Logo icon of Github (To github repository)" alt="Logo icon of Github"></a>
+            <p>&copy;2023-2024 &#124; Webdesign Project &lsquo;Diffusion Basics&rsquo; <a
+                    href="https://www.inholland.nl/" target=”_blank”>&commat;InHolland</a>
             </p>
         </section>
 

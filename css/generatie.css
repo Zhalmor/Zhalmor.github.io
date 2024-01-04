@@ -1,7 +1,8 @@
 #lionExtraCaption {
     text-align: center;
     font-style: italic;
-    color: #aaaaaa;
+    color: #fff;
+    letter-spacing: 0.1rem;
 }
 
 
@@ -68,7 +69,7 @@ table {
     
     
 }
-tr:nth-child(2n) {
+tr:nth-child(even) {
     background-color: #CFF;
 }
 
